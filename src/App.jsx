@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff, Grid3X3, List } from 'lucide-react';
 
 // --- DATA SOURCE ---
 const libraryData = [
@@ -89,7 +89,7 @@ const libraryData = [
         hinglish: "Jinke charan kamal ke nakharupi chandramani ki chhata ka kuch anirvachaniya vilas gopiyon mein dekha gaya hai, ve purn anuraag ras ke sagar ki saar swaroop murti Shri Radhika mujh par bhi kabhi kripa karein.",
         translation: "May that Shri Radhika—who is the very embodiment of the essence of the ocean of complete love-rasa—bestow Her mercy upon me someday. An indescribable glimpse of the splendor from the effulgence of Her moon-like toenails is seen (reflected) in the Gopis."
       }
-      // Copy and paste the remaining 260 verses here following the exact pattern above.
+      // Add verses 11-270 here.
     ]
   },
   {
@@ -112,10 +112,10 @@ const libraryData = [
 
 // --- COMPONENTS ---
 
-const Header = ({ title, isDarkMode, toggleTheme, onBack, showBack }) => (
+const Header = ({ title, isDarkMode, toggleTheme, onBack, showBack, onIndexClick, showIndexButton }) => (
   <header className={`sticky top-0 z-50 shadow-lg transition-colors duration-300 ${isDarkMode ? 'bg-slate-900 text-amber-100' : 'bg-amber-700 text-amber-50'}`}>
     <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div className="flex items-center space-x-3 overflow-hidden">
+      <div className="flex items-center space-x-3 overflow-hidden flex-1">
         {showBack ? (
           <button onClick={onBack} className="mr-2 hover:bg-black/10 p-1 rounded-full transition-colors">
             <ArrowLeft className="h-6 w-6" />
@@ -127,18 +127,29 @@ const Header = ({ title, isDarkMode, toggleTheme, onBack, showBack }) => (
           {title}
         </h1>
       </div>
-      <button 
-        onClick={toggleTheme}
-        className={`p-2 rounded-full transition-colors ${isDarkMode ? 'hover:bg-slate-800 text-amber-300' : 'hover:bg-amber-600 text-yellow-200'}`}
-      >
-        {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-      </button>
+      <div className="flex items-center space-x-2">
+        {showIndexButton && (
+          <button
+            onClick={onIndexClick}
+            className={`p-2 rounded-full transition-colors ${isDarkMode ? 'hover:bg-slate-800 text-amber-300' : 'hover:bg-amber-600 text-yellow-200'}`}
+            title="Index"
+          >
+            <Grid3X3 className="h-5 w-5" />
+          </button>
+        )}
+        <button 
+          onClick={toggleTheme}
+          className={`p-2 rounded-full transition-colors ${isDarkMode ? 'hover:bg-slate-800 text-amber-300' : 'hover:bg-amber-600 text-yellow-200'}`}
+        >
+          {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </button>
+      </div>
     </div>
   </header>
 );
 
 const ViewSettings = ({ settings, toggleSetting, isDarkMode }) => (
-  <div className={`mb-8 rounded-xl p-4 border transition-colors duration-300 ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-200 shadow-sm'}`}>
+  <div className={`mb-6 rounded-xl p-4 border transition-colors duration-300 ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-200 shadow-sm'}`}>
     <div className="flex items-center space-x-2 mb-3">
       <Settings className={`h-4 w-4 ${isDarkMode ? 'text-amber-400' : 'text-amber-600'}`} />
       <span className={`text-xs font-bold uppercase tracking-wider ${isDarkMode ? 'text-slate-400' : 'text-amber-800'}`}>Display Options</span>
@@ -162,38 +173,38 @@ const ViewSettings = ({ settings, toggleSetting, isDarkMode }) => (
 );
 
 const VerseCard = ({ verse, settings, isDarkMode }) => (
-  <div className={`rounded-xl shadow-md overflow-hidden transition-all duration-300 border ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100 hover:shadow-lg'}`}>
-    <div className={`px-6 py-3 border-b flex justify-between items-center ${isDarkMode ? 'bg-slate-900/50 border-slate-700' : 'bg-amber-50 border-amber-100'}`}>
-      <span className={`font-serif font-bold text-lg ${isDarkMode ? 'text-amber-400' : 'text-amber-800'}`}>Verse {verse.id}</span>
-      <Heart className={`h-5 w-5 cursor-pointer transition-colors ${isDarkMode ? 'text-slate-600 hover:text-rose-500' : 'text-amber-300 hover:text-rose-500'}`} />
+  <div className={`w-full rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`}>
+    <div className={`px-6 py-4 border-b flex justify-between items-center ${isDarkMode ? 'bg-slate-900/50 border-slate-700' : 'bg-amber-50 border-amber-100'}`}>
+      <span className={`font-serif font-bold text-xl ${isDarkMode ? 'text-amber-400' : 'text-amber-800'}`}>Verse {verse.id}</span>
+      <Heart className={`h-6 w-6 cursor-pointer transition-colors ${isDarkMode ? 'text-slate-600 hover:text-rose-500' : 'text-amber-300 hover:text-rose-500'}`} />
     </div>
-    <div className="p-6 md:p-8 space-y-6">
+    <div className="p-6 md:p-10 space-y-8">
       <div className="text-center">
-        <p className={`text-xl md:text-2xl font-serif leading-relaxed whitespace-pre-line font-medium ${isDarkMode ? 'text-slate-100' : 'text-gray-800'}`}>{verse.sanskrit}</p>
+        <p className={`text-2xl md:text-3xl font-serif leading-relaxed whitespace-pre-line font-medium ${isDarkMode ? 'text-slate-100' : 'text-gray-800'}`}>{verse.sanskrit}</p>
       </div>
       
       {settings.transliteration && verse.transliteration && (
-        <div className={`p-4 rounded-lg text-center ${isDarkMode ? 'bg-slate-900/50 text-emerald-200' : 'bg-gray-50 text-slate-600'}`}>
-          <p className="font-mono text-sm md:text-base italic whitespace-pre-line">{verse.transliteration}</p>
+        <div className={`p-5 rounded-xl text-center ${isDarkMode ? 'bg-slate-900/50 text-emerald-200' : 'bg-gray-50 text-slate-600'}`}>
+          <p className="font-mono text-base md:text-lg italic whitespace-pre-line">{verse.transliteration}</p>
         </div>
       )}
 
-      <div className="space-y-4 pt-2">
+      <div className="space-y-6 pt-2">
          {settings.hindi && verse.hindi && (
-           <div className={`border-l-4 pl-4 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
-             <h4 className={`text-[10px] uppercase font-bold mb-1 ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
-             <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}>{verse.hindi}</p>
+           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
+             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
+             <p className={`text-xl leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}>{verse.hindi}</p>
            </div>
          )}
          {settings.hinglish && verse.hinglish && (
-           <div className={`border-l-4 pl-4 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
-             <h4 className={`text-[10px] uppercase font-bold mb-1 ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
-             <p className={`italic text-base leading-relaxed ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}>{verse.hinglish}</p>
+           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
+             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
+             <p className={`italic text-lg leading-relaxed ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}>{verse.hinglish}</p>
            </div>
          )}
          {settings.english && verse.translation && (
-           <div className={`border-l-4 pl-4 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
-             <h4 className={`text-[10px] uppercase font-bold mb-1 ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
+           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
+             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
              <p className={`text-lg leading-relaxed ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}>{verse.translation}</p>
            </div>
          )}
@@ -202,10 +213,37 @@ const VerseCard = ({ verse, settings, isDarkMode }) => (
   </div>
 );
 
+const IndexModal = ({ isOpen, onClose, verses, onSelect, isDarkMode }) => {
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+      <div className={`w-full max-w-lg max-h-[80vh] flex flex-col rounded-2xl shadow-2xl ${isDarkMode ? 'bg-slate-900 text-slate-100' : 'bg-white text-gray-800'}`}>
+        <div className={`p-4 border-b flex justify-between items-center ${isDarkMode ? 'border-slate-800' : 'border-gray-200'}`}>
+          <h2 className="text-lg font-bold font-serif">Verse Index</h2>
+          <button onClick={onClose} className="p-2 rounded-full hover:bg-black/10"><X className="h-5 w-5" /></button>
+        </div>
+        <div className="overflow-y-auto p-4 grid grid-cols-5 gap-3">
+          {verses.map((verse, idx) => (
+            <button
+              key={verse.id}
+              onClick={() => onSelect(idx)}
+              className={`p-3 rounded-lg text-sm font-bold transition-all ${isDarkMode 
+                ? 'bg-slate-800 hover:bg-amber-900/50 border border-slate-700 hover:border-amber-500' 
+                : 'bg-amber-50 hover:bg-amber-100 border border-amber-200 hover:border-amber-400 text-amber-900'}`}
+            >
+              {verse.id}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Footer = ({ isDarkMode }) => (
-  <footer className={`py-12 mt-12 transition-colors duration-300 border-t ${isDarkMode ? 'bg-slate-900 text-slate-400 border-slate-800' : 'bg-amber-800 text-amber-100 border-amber-900'}`}>
+  <footer className={`py-8 mt-12 transition-colors duration-300 border-t ${isDarkMode ? 'bg-slate-900 text-slate-400 border-slate-800' : 'bg-amber-800 text-amber-100 border-amber-900'}`}>
     <div className="max-w-4xl mx-auto px-4 text-center">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm font-medium opacity-80">
+      <div className="flex flex-col justify-center items-center gap-2 text-sm font-medium opacity-80">
         <span>© 2025 Bhakti Library</span>
       </div>
     </div>
@@ -234,68 +272,170 @@ const LibraryView = ({ onSelectBook, isDarkMode }) => (
 
 export default function App() {
   const [currentBook, setCurrentBook] = useState(null);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showIndex, setShowIndex] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   const [settings, setSettings] = useState({ transliteration: true, hindi: true, hinglish: false, english: true });
 
-  const versesPerPage = 5;
+  // Swipe logic
+  const touchStart = useRef(null);
+  const touchEnd = useRef(null);
+  const minSwipeDistance = 50;
 
-  useEffect(() => { setCurrentPage(1); setSearchTerm(''); }, [currentBook]);
-
-  // Main Render Logic
-  const renderContent = () => {
-    if (!currentBook) {
-      return (
-        <>
-          <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
-          <LibraryView onSelectBook={setCurrentBook} isDarkMode={isDarkMode} />
-          <Footer isDarkMode={isDarkMode} />
-        </>
-      );
-    }
-
-    const filteredVerses = currentBook.verses.filter(verse => 
-      verse.sanskrit.includes(searchTerm) || 
-      (verse.translation && verse.translation.toLowerCase().includes(searchTerm.toLowerCase())) ||
-      (verse.hindi && verse.hindi.includes(searchTerm)) ||
-      verse.id.toString() === searchTerm
-    );
-
-    const indexOfLastVerse = currentPage * versesPerPage;
-    const currentVerses = filteredVerses.slice(indexOfLastVerse - versesPerPage, indexOfLastVerse);
-    const totalPages = Math.ceil(filteredVerses.length / versesPerPage);
-
-    return (
-      <>
-        <Header title={currentBook.title} isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={true} onBack={() => setCurrentBook(null)} />
-        <main className="max-w-3xl mx-auto px-4 pt-8 pb-16 min-h-[60vh]">
-          <ViewSettings settings={settings} toggleSetting={(key) => setSettings({...settings, [key]: !settings[key]})} isDarkMode={isDarkMode} />
-          <div className="sticky top-20 z-40 mb-10">
-            <div className="relative max-w-xl mx-auto shadow-lg rounded-full">
-               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><Search className="h-5 w-5 text-gray-400" /></div>
-               <input type="text" placeholder="Search verses..." className={`block w-full pl-11 pr-4 py-4 rounded-full border-2 focus:outline-none ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-            </div>
-          </div>
-          <div className="space-y-8">
-              {currentVerses.map(verse => <VerseCard key={verse.id} verse={verse} settings={settings} isDarkMode={isDarkMode} />)}
-          </div>
-          {filteredVerses.length > versesPerPage && (
-              <div className="mt-12 flex justify-center space-x-4">
-                  <button onClick={() => setCurrentPage(c => Math.max(1, c-1))} disabled={currentPage===1} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronLeft/></button>
-                  <span className="py-2">Page {currentPage} of {totalPages}</span>
-                  <button onClick={() => setCurrentPage(c => Math.min(totalPages, c+1))} disabled={currentPage===totalPages} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronRight/></button>
-              </div>
-          )}
-        </main>
-        <Footer isDarkMode={isDarkMode} />
-      </>
-    );
+  const onTouchStart = (e) => {
+    touchEnd.current = null;
+    touchStart.current = e.targetTouches[0].clientX;
   };
 
+  const onTouchMove = (e) => {
+    touchEnd.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const distance = touchStart.current - touchEnd.current;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    
+    if (isLeftSwipe && currentIndex < (currentBook?.verses.length || 0) - 1) {
+      setCurrentIndex(prev => prev + 1);
+    }
+    if (isRightSwipe && currentIndex > 0) {
+      setCurrentIndex(prev => prev - 1);
+    }
+  };
+
+  // Scroll to top when changing verse
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentIndex]);
+
+  const handleBookSelect = (book) => {
+    setCurrentBook(book);
+    setCurrentIndex(0);
+    setSearchTerm('');
+  };
+
+  // Search/Filter logic for finding specific verses within a book
+  const handleSearch = (e) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+    if (!term) return;
+
+    // Try to find the first matching verse index
+    const matchIndex = currentBook.verses.findIndex(verse => 
+      verse.id.toString() === term ||
+      verse.sanskrit.toLowerCase().includes(term.toLowerCase()) ||
+      (verse.hindi && verse.hindi.toLowerCase().includes(term.toLowerCase())) ||
+      (verse.english && verse.english.toLowerCase().includes(term.toLowerCase()))
+    );
+
+    if (matchIndex !== -1) {
+      setCurrentIndex(matchIndex);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentIndex < currentBook.verses.length - 1) setCurrentIndex(c => c + 1);
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) setCurrentIndex(c => c - 1);
+  };
+
+  const handleIndexSelect = (index) => {
+    setCurrentIndex(index);
+    setShowIndex(false);
+  };
+
+  if (!currentBook) {
+    return (
+      <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
+        <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
+        <LibraryView onSelectBook={handleBookSelect} isDarkMode={isDarkMode} />
+        <Footer isDarkMode={isDarkMode} />
+      </div>
+    );
+  }
+
+  const currentVerse = currentBook.verses[currentIndex];
+
   return (
-    <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
-      {renderContent()}
+    <div 
+      className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
+      <Header 
+        title={currentBook.title} 
+        isDarkMode={isDarkMode} 
+        toggleTheme={() => setIsDarkMode(!isDarkMode)} 
+        showBack={true} 
+        onBack={() => setCurrentBook(null)}
+        showIndexButton={true}
+        onIndexClick={() => setShowIndex(true)}
+      />
+
+      <IndexModal 
+        isOpen={showIndex} 
+        onClose={() => setShowIndex(false)} 
+        verses={currentBook.verses} 
+        onSelect={handleIndexSelect} 
+        isDarkMode={isDarkMode} 
+      />
+
+      <main className="max-w-3xl mx-auto px-4 pt-6 pb-24 min-h-[80vh] flex flex-col">
+        <ViewSettings settings={settings} toggleSetting={(key) => setSettings({...settings, [key]: !settings[key]})} isDarkMode={isDarkMode} />
+        
+        {/* Search Bar */}
+        <div className="mb-6 relative">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                <Search className={`h-5 w-5 ${isDarkMode ? 'text-slate-500' : 'text-amber-400'}`} />
+            </div>
+            <input 
+                type="text" 
+                placeholder="Jump to verse number or search text..." 
+                className={`block w-full pl-11 pr-4 py-3 rounded-full border-2 focus:outline-none transition-colors ${isDarkMode ? 'bg-slate-800 border-slate-700 text-slate-200 focus:border-amber-500' : 'bg-white border-amber-100 text-gray-800 focus:border-amber-400'}`} 
+                value={searchTerm} 
+                onChange={handleSearch} 
+            />
+        </div>
+
+        {/* Active Verse Card */}
+        <div className="flex-grow flex items-center">
+          <VerseCard verse={currentVerse} settings={settings} isDarkMode={isDarkMode} />
+        </div>
+
+        {/* Navigation Controls */}
+        <div className={`fixed bottom-0 left-0 right-0 p-4 border-t shadow-lg z-40 backdrop-blur-md ${isDarkMode ? 'bg-slate-900/90 border-slate-800' : 'bg-white/90 border-amber-100'}`}>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4">
+            
+            <div className="flex justify-between items-center">
+              <button 
+                onClick={handlePrev} 
+                disabled={currentIndex === 0}
+                className={`flex items-center px-4 py-3 rounded-xl font-bold transition-all ${currentIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'active:scale-95'} ${isDarkMode ? 'bg-slate-800 hover:bg-slate-700 text-amber-400' : 'bg-amber-100 hover:bg-amber-200 text-amber-900'}`}
+              >
+                <ChevronLeft className="mr-1 h-5 w-5" /> Prev
+              </button>
+
+              <span className="font-mono font-medium opacity-60">
+                {currentIndex + 1} / {currentBook.verses.length}
+              </span>
+
+              <button 
+                onClick={handleNext} 
+                disabled={currentIndex === currentBook.verses.length - 1}
+                className={`flex items-center px-4 py-3 rounded-xl font-bold transition-all ${currentIndex === currentBook.verses.length - 1 ? 'opacity-30 cursor-not-allowed' : 'active:scale-95'} ${isDarkMode ? 'bg-amber-600 hover:bg-amber-700 text-white' : 'bg-amber-600 hover:bg-amber-700 text-white'}`}
+              >
+                Next <ChevronRight className="ml-1 h-5 w-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
