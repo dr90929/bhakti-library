@@ -8,6 +8,7 @@ const libraryData = [
     title: "Shri Radha Sudha Nidhi",
     author: "Shri Hit Harivansh Mahaprabhu",
     description: "The nectar of devotion to Srimati Radharani (270 Verses).",
+    import { verses } from './verses';
     verses: [
       {
         id: 1,
