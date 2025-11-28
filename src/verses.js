@@ -2159,4 +2159,4 @@ export const verses = [
     hinglish: "Hey vidvanon! Yadi aapke chitt mein adbhut anand ka lobh hai toh (Radha) Ras Sudhanidhi namak is stotra ko kaan rupi kalashon dwara grahan karke paan kijiye.",
     translation: "O wise ones! If you have a greed for wondrous bliss, then take up this hymn named \"Rasa Sudha Nidhi\" (The Nectar-Ocean of Rasa) with the pitchers of your ears, and drink."
   }
-]
+];
