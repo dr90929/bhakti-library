@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff, Grid3X3, Minus, Plus } from 'lucide-react';
+import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff, Grid3X3, Minus, Plus, Share2 } from 'lucide-react';
 
 // --- IMPORTS ---
-// Import the verses from your separate file here.
+// Make sure you have your full verses.js file in the same folder
 import { verses } from './verses'; 
 
 // --- DATA SOURCE ---
@@ -116,76 +116,121 @@ const ViewSettings = ({ settings, toggleSetting, fontSize, setFontSize, isDarkMo
   </div>
 );
 
-const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => (
-  <div className={`w-full rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`}>
-    <div className={`px-6 py-4 border-b flex justify-between items-center ${isDarkMode ? 'bg-slate-900/50 border-slate-700' : 'bg-amber-50 border-amber-100'}`}>
-      <span className={`font-serif font-bold text-xl ${isDarkMode ? 'text-amber-400' : 'text-amber-800'}`}>Verse {verse.id}</span>
-      <Heart className={`h-6 w-6 cursor-pointer transition-colors ${isDarkMode ? 'text-slate-600 hover:text-rose-500' : 'text-amber-300 hover:text-rose-500'}`} />
-    </div>
-    <div className="p-6 md:p-10 space-y-8">
-      
-      {/* Sanskrit Verse - Dynamic Font Size */}
-      <div className="text-center">
-        <p 
-          style={{ fontSize: `${fontSize + 4}px`, lineHeight: '1.6' }} 
-          className={`font-serif whitespace-pre-line font-medium ${isDarkMode ? 'text-slate-100' : 'text-gray-800'}`}
-        >
-          {verse.sanskrit}
-        </p>
+const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
+  
+  const handleShare = async () => {
+    // Generate a unique URL for the current verse
+    const url = new URL(window.location.href);
+    url.searchParams.set("verse", verse.id);
+    const shareUrl = url.toString();
+    
+    const shareText = `*Shri Radha Sudha Nidhi - Verse ${verse.id}*\n\n` +
+      `${verse.sanskrit}\n\n` +
+      `*Hindi:*\n${verse.hindi.substring(0, 100)}...\n\n` +
+      `Read more: ${shareUrl}`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `Verse ${verse.id}`,
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch (error) {
+        console.log('Error sharing:', error);
+      }
+    } else {
+      // Fallback for desktop or browsers without share API
+      try {
+        await navigator.clipboard.writeText(shareText);
+        // You might want to show a toast here instead of alert in a real app
+        alert('Verse link copied to clipboard!');
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
+    }
+  };
+
+  return (
+    <div className={`w-full rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`}>
+      <div className={`px-6 py-4 border-b flex justify-between items-center ${isDarkMode ? 'bg-slate-900/50 border-slate-700' : 'bg-amber-50 border-amber-100'}`}>
+        <span className={`font-serif font-bold text-xl ${isDarkMode ? 'text-amber-400' : 'text-amber-800'}`}>Verse {verse.id}</span>
+        
+        <div className="flex items-center space-x-4">
+          <button 
+            onClick={handleShare}
+            className={`transition-colors ${isDarkMode ? 'text-slate-400 hover:text-amber-300' : 'text-amber-400 hover:text-amber-600'}`}
+            title="Share Verse Link"
+          >
+            <Share2 className="h-5 w-5" />
+          </button>
+          <Heart className={`h-6 w-6 cursor-pointer transition-colors ${isDarkMode ? 'text-slate-600 hover:text-rose-500' : 'text-amber-300 hover:text-rose-500'}`} />
+        </div>
       </div>
       
-      {settings.transliteration && verse.transliteration && (
-        <div className={`p-5 rounded-xl text-center ${isDarkMode ? 'bg-slate-900/50 text-emerald-200' : 'bg-gray-50 text-slate-600'}`}>
+      <div className="p-6 md:p-10 space-y-8">
+        
+        {/* Sanskrit Verse - Dynamic Font Size */}
+        <div className="text-center">
           <p 
-            style={{ fontSize: `${fontSize - 2}px` }}
-            className="font-mono italic whitespace-pre-line"
+            style={{ fontSize: `${fontSize + 4}px`, lineHeight: '1.6' }} 
+            className={`font-serif whitespace-pre-line font-medium ${isDarkMode ? 'text-slate-100' : 'text-gray-800'}`}
           >
-            {verse.transliteration}
+            {verse.sanskrit}
           </p>
         </div>
-      )}
+        
+        {settings.transliteration && verse.transliteration && (
+          <div className={`p-5 rounded-xl text-center ${isDarkMode ? 'bg-slate-900/50 text-emerald-200' : 'bg-gray-50 text-slate-600'}`}>
+            <p 
+              style={{ fontSize: `${fontSize - 2}px` }}
+              className="font-mono italic whitespace-pre-line"
+            >
+              {verse.transliteration}
+            </p>
+          </div>
+        )}
 
-      <div className="space-y-6 pt-2">
-         {settings.hindi && verse.hindi && (
-           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
-             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
-             {/* Added whitespace-pre-wrap to preserve newlines for Notes */}
-             <p 
-               style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
-             >
-               {verse.hindi}
-             </p>
-           </div>
-         )}
-         {settings.hinglish && verse.hinglish && (
-           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
-             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
-             {/* Added whitespace-pre-wrap */}
-             <p 
-               style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`italic whitespace-pre-wrap ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}
-             >
-               {verse.hinglish}
-             </p>
-           </div>
-         )}
-         {settings.english && verse.translation && (
-           <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
-             <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
-             {/* Added whitespace-pre-wrap */}
-             <p 
-               style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
-             >
-               {verse.translation}
-             </p>
-           </div>
-         )}
+        <div className="space-y-6 pt-2">
+           {settings.hindi && verse.hindi && (
+             <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
+               <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
+               {/* Added whitespace-pre-wrap to preserve line breaks for Notes */}
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               >
+                 {verse.hindi}
+               </p>
+             </div>
+           )}
+           {settings.hinglish && verse.hinglish && (
+             <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
+               <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`italic whitespace-pre-wrap ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}
+               >
+                 {verse.hinglish}
+               </p>
+             </div>
+           )}
+           {settings.english && verse.translation && (
+             <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
+               <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               >
+                 {verse.translation}
+               </p>
+             </div>
+           )}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const IndexModal = ({ isOpen, onClose, verses, onSelect, isDarkMode }) => {
   if (!isOpen) return null;
@@ -252,6 +297,63 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [fontSize, setFontSize] = useState(18); // Default font size
   const [settings, setSettings] = useState({ transliteration: true, hindi: true, hinglish: false, english: true });
+
+  // --- NEW URL HANDLING LOGIC ---
+
+  // 1. URL PARAMETER LOGIC TO LOAD VERSE DIRECTLY ON STARTUP
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const verseId = params.get('verse');
+
+    // Only if we haven't selected a book yet, try to load from URL
+    if (verseId && !currentBook) {
+        // For now, we assume 'Shri Radha Sudha Nidhi' (index 0) is the main book
+        const defaultBook = libraryData[0]; 
+        const verseIndex = defaultBook.verses.findIndex(v => v.id.toString() === verseId);
+        
+        if (verseIndex !== -1) {
+            setCurrentBook(defaultBook);
+            setCurrentIndex(verseIndex);
+        }
+    }
+  }, []); // Empty dependency array = runs only once on mount
+
+  // 2. UPDATE URL WHEN VERSE CHANGES
+  useEffect(() => {
+    if (currentBook) {
+       const url = new URL(window.location);
+       const currentVerseId = currentBook.verses[currentIndex].id;
+       
+       // If the URL doesn't match the current verse, update it
+       if (url.searchParams.get('verse') !== String(currentVerseId)) {
+           url.searchParams.set('verse', currentVerseId);
+           // pushState changes URL without reloading the page
+           window.history.pushState({}, '', url);
+       }
+    }
+  }, [currentIndex, currentBook]);
+
+  // 3. HANDLE BROWSER BACK/FORWARD BUTTONS
+  useEffect(() => {
+    const handlePopState = () => {
+        const params = new URLSearchParams(window.location.search);
+        const verseId = params.get('verse');
+        
+        if (verseId && currentBook) {
+             const verseIndex = currentBook.verses.findIndex(v => v.id.toString() === verseId);
+             if (verseIndex !== -1) {
+                 setCurrentIndex(verseIndex);
+             }
+        } else if (!verseId) {
+            // If back button goes to home (no verse param), show library view
+            setCurrentBook(null);
+        }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [currentBook]);
+
 
   // Swipe logic
   const touchStart = useRef(null);
@@ -345,7 +447,13 @@ export default function App() {
         isDarkMode={isDarkMode} 
         toggleTheme={() => setIsDarkMode(!isDarkMode)} 
         showBack={true} 
-        onBack={() => setCurrentBook(null)}
+        // Back button now clears the URL param as well as state
+        onBack={() => {
+            setCurrentBook(null);
+            const url = new URL(window.location);
+            url.searchParams.delete('verse');
+            window.history.pushState({}, '', url);
+        }}
         showIndexButton={true}
         onIndexClick={() => setShowIndex(true)}
       />
