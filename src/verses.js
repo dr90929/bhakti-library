@@ -799,7 +799,6 @@ export const verses = [
     hinglish: "Chikne, ghunghrale aur neele keshon wali, pake hue bimbaphal ke saman adharoshth wali, chandra jaise mukh wali, chanchal khanjan ko lajjit karne wale netron wali, nasika ke agrabhag mein kanti yukt moti dharan karne wali, sthul nitambon wali, krishodari, vakshasthal ke tat ki golakar chhata se adbhut pratit hone wali, shobha shali bhuj lata mein sundar kankan (chudiyan) dharan karne wali hey Shri Radhe! Apne (aise) roop ko prakat karo.",
     translation: "O Radhe! You with the glossy, curly, dark hair; You whose lips are like the ripe bimba fruit; You with the moon-like face! You whose eyes defeat the playful khanjana bird; You who wear a lustrous pearl on the tip of Your nose! You with the full hips and slender waist; You whose rounded bosom is astonishingly beautiful! You whose creeper-like arms are adorned with lovely bracelets! Please reveal Your true form to me!"
   },
-  export const verses_101_to_150 = [
   {
     id: 101,
     sanskrit: "लज्जान्तः पटमारचय्य रचितस्माय प्रसूनाञ्जली\nराधांगे नवरंगधाग्नि ललित प्रस्तावने यौवने ।\nश्रोणी हेम वरासने स्मरनृपेणाध्यासिते मोहनं\nलीलापाङ्ग विचित्र ताण्डव कला पाण्डित्यमुन्मीलति ॥ १०१ ॥",
