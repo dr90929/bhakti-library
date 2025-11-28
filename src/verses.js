@@ -1598,5 +1598,405 @@ export const verses = [
     hindi: "(जो) घनीभूत रस की मोहन मूर्ति हैं, (जो) विचित्र केलियों के महान् आनन्द से उल्लसित रहते हैं और जिनका सुन्दर मोर मुकुट श्रीराधा के चरणों पर लोटता रहता है, उन श्रीहरि की मैं वन्दना करता हूँ。",
     hinglish: "(Jo) ghanibhoot ras ki mohan murti hain, (jo) vichitra keliyon ke mahan anand se ullasit rehte hain aur jinka sundar mor mukut Shri Radha ke charanon par lotta rehta hai, un Shri Hari ki main vandana karta hoon.",
     translation: "I offer my obeisances to that Hari (Krishna). He is the enchanting form of condensed rasa (Rasaghana Mohana Murti), ever-ecstatic in the great festival of wondrous keli (pastimes), and His beautiful peacock-feather crown rolls at the feet of Shri Radha."
+  },
+  {
+    id: 201,
+    sanskrit: "कदा गायं गायं मधुर-मधुरीत्या मधुभिद-\nश्चरित्राणि स्फारामृत-रस-विचित्राणि बहुशः ।\nमृजन्ती तत्केली-भवनमभिरामं मलयज-\nच्छटाभिः सिञ्चन्ती रसहृदे निमग्नास्मि भविता ॥ २०१ ॥",
+    transliteration: "Kadā gāyaṃ gāyaṃ madhura-madhurītyā Madhubhida-\nś-caritrāṇi sphārāmṛta-rasa-vicitrāṇi bahuśaḥ |\nMṛjantī tat-kelī-bhavanam-abhirāmaṃ malayaja-\ncchaṭābhiḥ siñcantī rasa-hrade nimagnāsmi bhavitā ||",
+    hindi: "श्रीमधुसूदन के प्रचुर अमृत रस से भरे विचित्र लीला-चरित्रों को अत्यन्त मधुर रीति से गा-गाकर, उनके (श्रीमधुसूदन के) सुन्दर केलि-गृह का परिष्कार (सफाई) करती हुई और उसे अधिक मात्रा में चन्दन से छिड़कती हुई (मैं) रस-सरोवर में कब निमग्न हो जाऊँगी?",
+    hinglish: "Shri Madhusudan ke prachur amrit ras se bhare vichitra leela-charitron ko atyant madhur riti se gaa-gaakar, unke (Shri Madhusudan ke) sundar keli-grih ka parishkar (safai) karti hui aur use adhik matra mein chandan se chhidakti hui (main) ras-sarovar mein kab nimagn ho jaoongi?",
+    translation: "When, oh when, will I be immersed in the ocean of rasa? (When will I be immersed) while singing, again and again, in the sweetest manner, the wondrous and nectarous pastimes of Madhusudana (Krishna); while cleansing His beautiful play-bower (keli-bhavana); and while sprinkling it with abundant sandalwood paste?"
+  },
+  {
+    id: 202,
+    sanskrit: "उदंचद्रोमाञ्च-प्रचय-खचितां वेपथुमतीं\nदधानां श्रीराधामतिमधुर-लीलामय-तनुम् ।\nकदा वा कस्तूर्या किमपि रचयन्त्येव कुचयो-\nर्विचित्रां पत्रालीमहमहह वीक्षे सुकृतिनी ॥ २०२ ॥",
+    transliteration: "Udañcad-romāñca-pracaya-khacitāṃ vepathumatīṃ\ndadhānāṃ Śrī-Rādhām-atimadhura-līlāmaya-tanum |\nKadā vā kastūryā kimapi racayanty-eva kucayo-\nrvicitrāṃ patrālīm-aham-ahaha vīkṣe sukṛtinī ||",
+    hindi: "उठते हुए रोमांचों के समूह से भरे हुए, कम्पन से युक्त, अत्यन्त मधुर लीलामय शरीर को धारण करने वाली श्रीराधा को, अपने श्रीअंग युगल पर कस्तूरी से कुछ विचित्र पत्रावली की रचना करती हुई, अहा! भाग्यशालिनी मैं कब देखूँगी?",
+    hinglish: "Uthte hue romanchon ke samuh se bhare hue, kampan se yukt, atyant madhur leelamay sharir ko dharan karne wali Shri Radha ko, apne shri-ang yugal par kasturi se kuch vichitra patravali ki rachna karti hui, aha! Bhagyashalini main kab dekhoongi?",
+    translation: "Ah! When will I, the fortunate one (sukritini), behold Shri Radha? She who bears a supremely sweet, playful form, covered with rising goosebumps and trembling. (When will I see Her) as She Herself is painting wondrous, intricate patterns (patrali) with musk upon Her own breasts?"
+  },
+  {
+    id: 203,
+    sanskrit: "क्षणं सीत्कुर्वन्ती क्षणमथ महावेपथुमती\nक्षणं श्याम श्यामेत्यमुमभिलपन्ती पुलकिता ।\nमहाप्रेमा कापि प्रमद-मदनोद्दाम-रसदा\nसदानन्दा मूर्तिर्जयति वृषभानोः कुलमणिः ॥ २०३ ॥",
+    transliteration: "Kṣaṇaṃ sītkurvantī kṣaṇam-atha mahā-vepathumatī\nkṣaṇaṃ Śyāma Śyāmety-amum-abhilapantī pulakitā |\nMahāpremā kāpi pramada-madanoddāma-rasadā\nsadānandā mūrtir-jayati Vṛṣabhānoḥ kulamaṇiḥ ||",
+    hindi: "कभी सीत्कार करती हुई, कभी जोर-जोर से काँपती हुई, कभी रोमांचित होकर, 'हे श्याम हे श्याम' कहती हुई, महा प्रेम-स्वरूपा, प्रकृष्ट मद वाले उन्मत्त प्रेम-रस को देने वाली नित्यानन्द स्वरूपिणी किसी अनिर्वचनीया श्रीवृषभानु के कुल की मणि की जय हो।",
+    hinglish: "Kabhi sitkar karti hui, kabhi zor-zor se kaanpti hui, kabhi romanchit hokar, 'Hey Shyam Hey Shyam' kehti hui, maha prem-swarupa, prakrisht mad wale unmatt prem-ras ko dene wali nityanand swarupini kisi anirvachaniya Shri Vrishabhanu ke kul ki mani ki jai ho.",
+    translation: "All glories to that indescribable \"Jewel of Vrishabhanu's dynasty\"! One moment She is hissing (in bliss), the next She is trembling intensely. One moment, thrilled with goosebumps, She calls out, \"O Shyama! O Shyama!\" She is the embodiment of great love (mahaprema), the bestower of the rasa of intense, ecstatic passion, and the very form of eternal bliss."
+  },
+  {
+    id: 204,
+    sanskrit: "यस्याः प्रेमघनाकृतेः पद-नख-ज्योत्स्ना-भरस्त्रापित-\nस्वान्तानां समुदेति कापि सरसा भक्तिश्चमत्कारिणी ।\nसा मे गोकुल-भूप-नन्दनमनश्चोरी किशोरी कदा\nदास्यं दास्यति सर्व-वेद-शिरसां यत्तद्रहस्यं परम् ॥ २०४ ॥",
+    transliteration: "Yasyāḥ prema-ghanākṛteḥ pada-nakha-jyotsnā-bhara-snāpita-\nsvāntānāṃ samudeti kāpi sarasā bhaktiś-camatkāriṇī |\nSā me Gokula-bhūpa-nandana-manaścorī kiśorī kadā\ndāsyaṃ dāsyati sarva-veda-śirasāṃ yat-tad-rahasyaṃ param ||",
+    hindi: "घनीभूत प्रेम की मूर्ति जिन (श्रीराधा) के चरणों के नखों की चाँदनी के प्रवाह में स्त्रापित (स्नान कराये हुए) अन्तःकरण में किसी अनिर्वचनीया सरस तथा चमत्कृत कर देने वाली भक्ति का प्रादुर्भाव हो जाता है, गोकुल राजकुमार के चित्त को हरण करने वाली वे किशोरी (श्रीराधा) मुझे (अपना) वह दास्य कब प्रदान करेंगी जो समस्त उपनिषदों का परम रहस्य है? (अर्थात् उनमें छुपी हुई सार वस्तु है।)",
+    hinglish: "Ghanibhoot prem ki murti jin (Shri Radha) ke charanon ke nakhon ki chandni ke pravah mein snapit (snan karaye hue) antahkaran mein kisi anirvachaniya saras tatha chamatkrit kar dene wali bhakti ka pradurbhav ho jaata hai, Gokul rajkumar ke chitt ko haran karne wali ve kishori (Shri Radha) mujhe (apna) wah daasya kab pradan karengi jo samast upanishadon ka param rahasya hai?",
+    translation: "She is the embodiment of condensed love. For those whose hearts are bathed in the flood of moonlight from Her toenails, an indescribable, nectarous, and astonishing devotion arises. When will that Kishori (Radha), who steals the mind of the Prince of Gokula (Krishna), grant me Her dasyam (service)—that which is the supreme secret of all the Upanishads (the head of the Vedas)?"
+  },
+  {
+    id: 205,
+    sanskrit: "कामं तूलिकया करेण हरिणा यालक्तकैरङ्किता\nनानाकेलि विदग्ध-गोपरमणी-वृन्दे तथा वन्दिता ।\nया संगुप्ततया तथोपनिषदां हृद्येव विद्योतते\nसा राधा-चरण-द्वयी मम गतिर्लास्यैक-लीलामयी ॥ २०५ ॥",
+    transliteration: "Kāmaṃ tūlikayā kareṇa Hariṇā yālaktakair-aṅkitā\nnānā-keli-vidagdha-goparamaṇī-vṛnde tathā vanditā |\nYā saṃguptatayā tathopaniṣadāṃ hṛdy-eva vidyotate\nsā Rādhā-caraṇa-dvayī mama gatir-lāsyaika-līlāmayī ||",
+    hindi: "श्रीहरि ने अपने हाथ से भली भाँति जिन्हें महावर से अंकित (चित्रित) किया है, (जो) नाना केलियों में चतुर गोपांगनाओं के यूथ में वन्दित हैं तथा जो गुप्त रूप से उपनिषदों के हृदय में ही प्रकाशित हैं, वे एकमात्र लास्य (नृत्य) लीला से पूर्ण श्रीराधा के युगल चरण मेरी गति हैं。",
+    hinglish: "Shri Hari ne apne haath se bhali bhanti jinhein mahavar se ankit (chitrit) kiya hai, (jo) nana keliyon mein chatur gopanganaon ke youth mein vandit hain tatha jo gupt roop se upanishadon ke hriday mein hi prakashit hain, ve ekmatra laasya (nritya) leela se purn Shri Radha ke yugal charan meri gati hain.",
+    translation: "That pair of feet belonging to Shri Radha is my only refuge. They were lovingly painted with alaktaka (red lac) by Hari's own hand using a brush (tulika). They are worshipped by the assembly of Gopis, who are themselves experts in various pastimes. And they shine, well-hidden, within the very heart of the Upanishads. Those feet are filled with the singular play of lasya (divine dance)."
+  },
+  {
+    id: 206,
+    sanskrit: "सान्द्र-प्रेम-रसौघ-वर्षिणि नवोन्मीलन्महामाधुरी-\nसाम्राज्यैक-धुरीण-केलि-विभवत्कारुण्य-कल्लोलिनि ।\nश्रीवृन्दावनचन्द्र-चित्तहरिणी-बन्ध-स्फुरद्वागुरे\nश्रीराधे नव-कुञ्ज-नागरि तव क्रीतास्मि दास्योत्सवैः ॥ २०६ ॥",
+    transliteration: "Sāndra-prema-rasaugha-varṣiṇi navonmīlan-mahā-mādhurī-\nsāmrājyaika-dhurīṇa-keli-vibhavat-kāruṇya-kallolini |\nŚrī-Vṛndāvanacandra-cittahariṇī-bandha-sphurad-vāgure\nŚrī-Rādhe nava-kuñja-nāgari tava krītāsmi dāsyotsavaiḥ ||",
+    hindi: "घने प्रेम रस के समूह को बरसाने वाली, नूतन उल्लसित महामाधुरी के साम्राज्य की मुख्यतम केलि (श्रृंगारकेलि) से प्रकट होने वाली करुणा की सरिता, श्रीवृन्दावन चन्द्र के मन रूपी हरिण को वश में करने के लिए रस्सी रूपा और नवीन कुंजों में की जाने वाली क्रीड़ाओं में निपुण हे श्रीराधे! मैं आपके दास्य के आनन्दोल्लासों द्वारा खरीद ली गई हूँ。",
+    hinglish: "Ghane prem ras ke samuh ko barsane wali, nutan ullasit mahamadhuri ke samrajya ki mukhyatam keli (shringarkeli) se prakat hone wali karuna ki sarita, Shri Vrindavan Chandra ke mann rupi hiran ko vash mein karne ke liye rassi rupa aur naveen kunjon mein ki jaane wali kridaon mein nipun hey Shri Radhe! Main aapke daasya ke anandollason dwara kharid li gayi hoon.",
+    translation: "O Shri Radhe! O Queen of the new kunj! You are the rain-cloud of condensed love-rasa! You are a river of compassion (karunya-kallolini) born from the glory of keli (pastimes), which are the foremost in the empire of blossoming, supreme sweetness! You are the shining net (vagure) that binds and captures the deer of Vrindavan-chandra's (Krishna's) mind! I have been purchased by the joyous festival of Your service (dasyam)."
+  },
+  {
+    id: 207,
+    sanskrit: "स्वेदापूरः कुसुम-चयनैर्दूरतः कण्टकाङ्को\nवक्षोजेऽस्यास्तिलक-विलयो हन्त घर्माम्भसैव ।\nओष्ठः सख्या हिम-पवनतः सव्रणो राधिके ते\nक्रूरास्वेवं स्वघटितमहो गोपये प्रेष्ठसङ्गम् ॥ २०७ ॥",
+    transliteration: "Svedāpūraḥ kusuma-cayanair-dūrataḥ kaṇṭakāṅko\nvakṣoje'syās-tilaka-vilayo hanta gharmāmbhasaiva |\nOṣṭhaḥ sakhyā hima-pavanataḥ savraṇo Rādhike te\nkrūrāsv-evaṃ svaghaṭitam-aho gopaye preṣṭhasaṅgam ||",
+    hindi: "'दूर देश से फूल बीनने के कारण हमारी सखी के पसीना बह रहा है, (विहार से नहीं) इनके वक्षस्थल में काँटे छिदने के चिह्न हैं, (नखक्षत के नहीं) खेद है कि, पसीने से ही इनका तिलक धुल गया है, (प्रियतम के संग से नहीं) और इनके अधरोष्ठ ठण्डी हवा से ब्रण युक्त अर्थात् घाव पूर्ण हैं (दन्तक्षत से नहीं)' हे श्रीराधिके ! इस प्रकार (कहकर) स्वयं आपके द्वारा रचित प्रियतम संग को मैं क्रूर सखियों से छुपा लूँगी。",
+    hinglish: "'Door desh se phool binne ke karan hamari sakhi ke pasina beh raha hai, (vihar se nahi) inke vakshasthal mein kaante chhidne ke chinh hain, (nakhakshat ke nahi) khed hai ki, pasine se hi inka tilak dhul gaya hai, (priyatam ke sang se nahi) aur inke adharoshth thandi hawa se vran yukt arthat ghav purn hain (dantakshat se nahi)' Hey Shri Radhike! Is prakar (kehkar) swayam aapke dwara rachit priyatam sang ko main krur sakhiyon se chhupa loongi.",
+    translation: "\"Our Sakhi is covered in sweat (sveda-apurah) from picking flowers far away (not from keli)! The marks on Her breasts are from thorns (kantaka-ankah) (not nail-marks)! Alas, Her tilaka is washed away by perspiration (gharma-ambhasa) (not by His embrace)! And Her lips, O Sakhi, are wounded (savranah) by the cold wind (not by love-bites)!\" O Radhike! In this way, ah, I will conceal Your rendezvous with Your beloved, which you yourself arranged, from the cruel-minded sakhis."
+  },
+  {
+    id: 208,
+    sanskrit: "पातं पातं पद-कमलयोः कृष्णभृङ्गेण तस्याः\nस्मेरास्येन्दोर्मुकुलित-कुच-द्वन्द्व-हेमारविन्दम् ।\nपीत्वा वक्त्राम्बुजमतिरसान्नूनमंतः प्रवेष्टु-\nमत्यावेशान्नखरशिखया पाट्यमानं किमीक्षे ॥ २०८ ॥",
+    transliteration: "Pātaṃ pātaṃ pada-kamalayoḥ Kṛṣṇa-bhṛṅgeṇa tasyāḥ\nsmerāsyendor-mukulita-kuca-dvandva-hemāravindam |\nPītvā vaktrāmbujam-atirasān-nūnam-antaḥ praveṣṭum-\natyāveśān-nakhara-śikhayā pāṭyamānaṃ kim-īkṣe ||",
+    hindi: "उन हँसते हुए मुख चन्द्र वाली (श्रीराधा) के पद कमलों में श्रीकृष्ण रूपी भ्रमर के द्वारा बार-बार गिरकर (और) अत्यन्त रस पूर्वक (उनके) मुख कमल का पान करके, अत्यधिक आवेश में तत्काल (उनके वक्षस्थल के) अन्दर प्रवेश पाने के लिए बन्द स्वर्ण कमल जैसे श्रीअंग युगल को नखाग्र से विदीर्ण होते हुए क्या मैं देखूँगी?",
+    hinglish: "Un hanste hue mukh chandra wali (Shri Radha) ke pad kamalon mein Shri Krishna rupi bhramar ke dwara baar-baar girkar (aur) atyant ras purvak (unke) mukh kamal ka paan karke, atyadhik aavesh mein tatkal (unke vakshasthal ke) andar pravesh paane ke liye band swarn kamal jaise shri-ang yugal ko nakhagra se vidirn hote hue kya main dekhoongi?",
+    translation: "Will I ever see it? Will I see the Krishna-bee falling again and again at the lotus feet of Her whose face is a smiling moon? And after drinking the intense rasa of Her lotus-mouth, will I see Him, in His extreme eagerness to enter within Her, splitting Her two closed golden-lotus-bud breasts with His sharp nails?"
+  },
+  {
+    id: 209,
+    sanskrit: "अहो तेऽमी कुञ्जास्तदनुपम-रासस्थलमिदं\nगिरिद्रोणी सैव स्फुरति रति-रंङ्गे प्रणयिनी ।\nन वीक्षे श्रीराधां हर हर कुतोऽपीति शतधा\nविदीर्येत प्राणेश्वरि मम कदा हन्त हृदयम् ॥ २०९ ॥",
+    transliteration: "Aho te'mī kuñjās-tad-anupama-rāsa-sthalam-idaṃ\ngiri-droṇī saiva sphurati rati-raṅge praṇayinī |\nNa vīkṣe Śrī-Rādhāṃ hara hara kuto'pīti śatadhā\nvidīryeta prāṇeśvari mama kadā hanta hṛdayam ||",
+    hindi: "अहह ! वे ही ये कुंज हैं, वही अनुपम रास-स्थली है, (श्रीश्यामा श्याम के) रति रंग से प्रेम करने वाली वही गोवर्धन पर्वत की कन्दरा है (किन्तु) खेद है, कहीं भी श्रीराधा के दर्शन नहीं हो रहे हैं! हे प्राणेश्वरी! इस कष्ट से मेरा हृदय सौ टुकड़े होकर कब विदीर्ण हो जायेगा?",
+    hinglish: "Ahaha! Ve hi ye kunj hain, wahi anupam raas-sthali hai, (Shri Shyama-Shyam ke) rati rang se prem karne wali wahi Govardhan parvat ki kandara hai (kintu) khed hai, kahin bhi Shri Radha ke darshan nahi ho rahe hain! Hey Praneshwari! Is kasht se mera hriday sau tukde hokar kab vidirn ho jayega?",
+    translation: "Ah! These are those very kunjas! This is that same incomparable Raasa-sthali! And there shines that same valley of Govardhana, which is so dear to Their amorous sports! But alas! Alas! I do not see Shri Radha anywhere! O Praneshwari (Mistress of my life)! When, oh when, will my heart shatter into a hundred pieces from this agony?"
+  },
+  {
+    id: 210,
+    sanskrit: "इहैवाभूत्कुञ्ज नव-रति-कला-मोहन-तनो-\nरहो अत्रानृत्यद्दयित-सहिता सा रसनिधिः ।\nइति स्मारं स्मारं तव चरित-पीयूष-लहरीं\nकदा स्यां श्रीराधे चकित इह वृन्दावन भुवि ॥ २१० ॥",
+    transliteration: "Ihaivābhūt-kuñje nava-rati-kalā-mohana-tano-\nr-aho atrānṛtyad-dayita-sahitā sā rasanidhiḥ |\nIti smāraṃ smāraṃ tava carita-pīyūṣa-laharīṃ\nkadā syāṃ Śrī-Rādhe cakita iha Vṛndāvana bhuvi ||",
+    hindi: "मोहनांगी (श्रीराधा) का नवीन रति-कौशल इसी कुंज में (प्रकट) हुआ। अहो ! रस की सागर रूप उन (श्रीराधा) ने प्रियतम के साथ यहीं नृत्य किया।' इस प्रकार आपके चरितामृत की तरगों को बारबार स्मरण करता हुआ मैं, हे श्रीराधे ! इस श्रीवृन्दावन भूमि में कब चकित होकर रहूँगा?",
+    hinglish: "Mohanangi (Shri Radha) ka naveen rati-kaushal isi kunj mein (prakat) hua. Aho! Ras ki sagar roop un (Shri Radha) ne priyatam ke saath yahin nritya kiya.' Is prakar aapke charitamrit ki tarangon ko baar-baar smaran karta hua main, hey Shri Radhe! Is Shri Vrindavan bhumi mein kab chakit hokar rahoonga?",
+    translation: "\"It was right here in this kunja that Her enchanting form displayed new arts of rati (love)! Ah! It was right here that She, the ocean of rasa, danced with Her beloved!\" O Shri Radhe! Remembering again and again these waves of Your nectar-pastimes, when will I stand stunned in wonder here on this land of Vrindavan?"
+  },
+  {
+    id: 211,
+    sanskrit: "श्रीमद्-बिम्बाधरे ते स्फुरति नवसुधा-माधुरीसिन्धुकोटि-\nर्नेंत्रान्तस्ते विकीर्णाद्भुत-कुसुम-धनुश्चण्ड-सत्काण्डकोटिः ।\nश्रीवक्षोजे तवाति-प्रमद-रसकला-सार-सर्वस्व-कोटिः\nश्रीराधे त्वत्पदाब्जात्स्रवति निरवधि प्रेम-पीयूष-कोटिः ॥ २११ ॥",
+    transliteration: "Śrīmad-bimbādhare te sphurati nava-sudhā-mādhurī-sindhu-koṭi-\nr-netrāntas-te vikīrṇādbhuta-kusuma-dhanuś-caṇḍa-sat-kāṇḍa-koṭiḥ |\nŚrī-vakṣoje tavāti-pramada-rasakalā-sāra-sarvasva-koṭiḥ\nŚrī-Rādhe tvat-padābjāt-sravati niravadhi prema-pīyūṣa-koṭiḥ ||",
+    hindi: "आपके शोभाशाली बिम्बाधर से कोटि-कोटि नवीन सुधा माधुरी के समुद्र प्रकाशित हो रहे हैं, आपके नेत्रों के कटाक्ष अद्भुत अनंग (कामदेव) के कोटि-कोटि उग्र और नुकीले बाणों को बिखेरते रहते हैं, आपके शोभाशाली वक्षोज में अत्यन्त उत्तम प्रकार के मदपूर्ण रस-कौशल के कोटि-कोटि सार-सर्वस्व स्फुरित हो रहे हैं। हे श्रीराधे! आपके चरण कमल से परमोन्नत प्रेमामृत निरन्तर निर्झरित होता रहता है。",
+    hinglish: "Aapke shobhashali bimbadhar se koti-koti naveen sudha madhuri ke samudra prakashit ho rahe hain, aapke netron ke kataksh adbhut Anang (Kaamdev) ke koti-koti ugra aur nukile baanon ko bikherte rehte hain, aapke shobhashali vakshoj mein atyant uttam prakar ke madpurn ras-kaushal ke koti-koti saar-sarvasva sphurit ho rahe hain. Hey Shri Radhe! Aapke charan kamal se paramonnat premamrit nirantar nirjharit hota rehta hai.",
+    translation: "From Your glorious bimba-like lips shine millions of oceans of fresh, sweet nectar. From Your sidelong glances are scattered millions of sharp, powerful arrows of the wondrous Flower-Bowed God (Cupid). On Your glorious breasts flash millions of the essential treasures of ecstatic, artful rasa. And O Shri Radhe! From Your lotus feet flow millions of streams of supreme nectarous love (prema-piyusha)."
+  },
+  {
+    id: 212,
+    sanskrit: "सान्द्रानन्दोन्मद-रसघन-प्रेम-पीयूष-मूर्तेः\nश्रीराधाया अथ मधुपतेः सुप्तयोः कुञ्जतल्पे ।\nकुर्वाणाहं मृदु-मृदु-पदाम्भोज-सम्वाहनानि\nशय्यान्ते किं किमपि पतिता प्राप्त-तन्द्राभवेयम् ॥ २१२ ॥",
+    transliteration: "Sāndrānandonmada-rasaghana-prema-pīyūṣa-mūrteḥ\nŚrī-Rādhāyā atha Madhupateḥ suptayoḥ kuñja-talpe |\nKurvāṇāhaṃ mṛdu-mṛdu-padāmbhoja-saṃvāhanāni\nśayyānte kiṃ kimapi patitā prāpta-tandrā-bhaveyam ||",
+    hindi: "सघन आनन्द और उन्मत्त बना देने वाले रस से युक्त सघन प्रेमामृत की मूर्ति, कुंज शैया पर शयन करते हुए श्रीराधा और माधव के चरण कमलों को अत्यन्त कोमलता पूर्वक सम्वाहन (दबाती हुई) करती हुई मैं शैया के निकट ही क्या कुछ-कुछ लुढक जाऊँगी और ऊँघने लगूंगी?",
+    hinglish: "Saghan anand aur unmatt bana dene wale ras se yukt saghan premamrit ki murti, kunj shaiya par shayan karte hue Shri Radha aur Madhav ke charan kamalon ko atyant komalta purvak samvahan (dabati hui) karti hui main shaiya ke nikat hi kya kuch-kuch ludhak jaoongi aur unghne lagungi?",
+    translation: "As I am very gently massaging the lotus feet of Shri Radha and Madhupati—who are the very forms of condensed, intoxicating, blissful love-nectar, sleeping upon the kunja-bed—will I, falling beside the bed, drift off into a half-sleep (tandra)?"
+  },
+  {
+    id: 213,
+    sanskrit: "राधा-पादारविन्दोच्छलित-नव-रस-प्रेम-पीयूष-पुञ्जे\nकालिन्दी-कूल-कुञ्ज हृदि कलित-महोदार-माधुर्य-भावः ।\nश्रीवृन्दारण्य-वीथी-ललित-रतिकला-नागरीं तां गरीयो\nगम्भीरैकानुरागां मनसि परिचरन् विस्मृतान्यः कदास्याम् ॥ २१३ ॥",
+    transliteration: "Rādhā-pādāravindocchalita-nava-rasa-prema-pīyūṣa-puñje\nKālindī-kūla-kuñja hṛdi kalita-mahodāra-mādhurya-bhāvaḥ |\nŚrī-Vṛndāraṇya-vīthī-lalita-ratikalā-nāgarīṃ tāṃ garīyo-\ngambhīraikānurāgāṃ manasi paricaran vismṛtānyaḥ kadāsyām ||",
+    hindi: "श्रीराधा के चरण कमल से उच्छलित (निकले हुए) नूतन रस और प्रेमामृत के समूह से युक्त यमुना तटवर्ती कुंज में, अपने हृदय में अत्यन्त उदार माधुर्य रस को धारण करके मैं श्रीवृन्दावन की गलियों में सुन्दर रति कला में निपुण एवं गरिमायुक्त-गम्भीर अनुराग से भरी उन श्रीराधा की मानसिक (भावना) सेवा करता हुआ अन्य बाहरी विषयों को कब भूल जाऊँगी?",
+    hinglish: "Shri Radha ke charan kamal se uchhalit (nikle hue) nutan ras aur premamrit ke samuh se yukt Yamuna tatvarti kunj mein, apne hriday mein atyant udar madhurya ras ko dharan karke main Shri Vrindavan ki galiyon mein sundar rati kala mein nipun evam garimayukt-gambhir anuraag se bhari un Shri Radha ki mansik (bhavana) seva karta hua anya bahari vishayon ko kab bhool jaoongi?",
+    translation: "In the kunja on the Yamuna's bank, which is flooded with the nectar of new rasa and love overflowing from Radha's lotus feet—when will I, holding that supremely generous madhurya-bhava in my heart and mentally serving (manasi paricharan) that Nagari (Radha) in the lanes of Vrindavan, become forgetful of all else? (That Radha who is) skillful in the lovely arts of rati and filled with a deep, singular, and profound love."
+  },
+  {
+    id: 214,
+    sanskrit: "अदृष्ट् वा राधाङ्‌के निमिषमपि तं नागरमणि\nतया वा खेलन्तं ललित-ललितानङ्ग-कलया ।\nकदाहं दुःखाब्धौ सपदि पतिता मूर्च्छितवती\nन तामाश्वास्यार्त्ता सुचिर मनुशोचे निजदशाम् ॥ २१४ ॥",
+    transliteration: "Adṛṣṭvā Rādhāṅke nimiṣam-api taṃ Nāgaramaṇiṃ\ntayā vā khelantaṃ lalita-lalitānaṅga-kalayā |\nKadāhaṃ duḥkhābdhau sapadi patitā mūrcchitavatī\nna tām-āśvāsyārttā suciram-anuśoce nija-daśām ||",
+    hindi: "उन नागर शिरोमणि (श्रीश्यामसुन्दर) को एक क्षण के लिए भी श्रीराधा के अंक में न देखकर अथवा उनके साथ अत्यन्त सुन्दर महाप्रेम (काम) कलाओं द्वारा क्रीड़ा करते न देखकर उन विरह से पीड़ित (श्रीराधा) को बिना धीरज बँधाये तत्काल ही दुःख सागर में पड़कर मूर्छित हुई मैं कब अपनी (उस) दशा पर चिरकाल तक पश्चात्ताप करूँगी? (पश्चात्ताप इस बात का है कि मैं क्यों मूर्छित हो गई? यदि सावधान रहती तो श्रीराधा को धैर्य बँधाती)।",
+    hinglish: "Un nagar shiromani (Shri Shyamsundar) ko ek kshan ke liye bhi Shri Radha ke ank mein na dekhkar athva unke saath atyant sundar mahaprem (kaam) kalaon dwara krida karte na dekhkar un virah se pidit (Shri Radha) ko bina dhiraj bandhaye tatkal hi dukh sagar mein padkar murchhit hui main kab apni (us) dasha par chirkal tak pashchattap karoongi? (Pashchattap is baat ka hai ki main kyun murchhit ho gayi? Yadi savdhan rehti toh Shri Radha ko dhairya bandhati).",
+    translation: "Not seeing that \"Jewel of Nagaras\" (Krishna) in Radha's lap even for a moment, or not seeing Him playing with Her in the most beautiful arts of ananga (love); and thus, failing to console Her (Radha) who is pained by separation, I immediately fall into an ocean of sorrow and faint. When will I, (upon waking), lament for a long time over my own pathetic state (of having fainted)? (The remorse is: \"Why did I faint? If I had remained conscious, I could have consoled Shri Radha.\")"
+  },
+  {
+    id: 215,
+    sanskrit: "भूयो भूयः कमलनयने किं मुधा वार्यतेसौ\nवाङ्गमात्रेपि त्वदनुगमनं न त्यजत्येव धूर्तः ।\nकिश्चिद्राधे कुरु कुचतटी प्रान्तमस्य म्रदीयश्-\nचक्षुर्द्वारा तमनुपतितं चूर्णतामेतु चेतः ॥ २१५ ॥",
+    transliteration: "Bhūyo bhūyaḥ kamala-nayane kiṃ mudhā vāryate'sau\nvāṅ-mātre'pi tvad-anugamanaṃ na tyajaty-eva dhūrtaḥ |\nKiñcid Rādhe kuru kucataṭī-prāntam-asya mradīyaś-\ncakṣur-dvārā tam-anupatitaṃ cūrṇatām-etu cetaḥ ||",
+    hindi: "हे कमल नयनी ! इन (श्रीकृष्ण) को (आप) बार-बार व्यर्थ ही क्यों रोक रही हो? केवल कह देने भर से धूर्त (श्रीकृष्ण) आप का पीछा करना नहीं छोड़ेंगे। हे श्रीराधे ! (आप) कुचतट कोर की तनिक (झाँकी) (इनको) करा दीजिये (जिससे) इनका मुदुल चित्त नेत्र-मार्ग से उन (कुचतट) पर गिरकर चूर-चूर हो जाय。",
+    hinglish: "Hey kamal nayani! In (Shri Krishna) ko (aap) baar-baar vyarth hi kyun rok rahi ho? Keval keh dene bhar se dhurt (Shri Krishna) aap ka pichha karna nahi chhodenge. Hey Shri Radhe! (Aap) kuchatat kor ki tanik (jhanki) (inko) kara dijiye (jisse) inka mridul chitt netra-marg se un (kuchatat) par girkar chur-chur ho jaay.",
+    translation: "\"O Lotus-Eyed One! Why do you fruitlessly try to stop Him again and again? That rogue (Dhurta) will not stop following You just by words alone. O Radhe! Just show Him the slightest glimpse of the edge of Your bosom! Let His soft heart, following that path through His eyes, fall upon it and be crushed to pieces!\""
+  },
+  {
+    id: 216,
+    sanskrit: "किं वा नस्तैः सुशास्त्रैः किमथ तदुदितैर्वर्त्मभिः सद्गृहीतै-\nर्यत्रास्ति प्रेममूर्तेर्नहि महिमसुधा नापि भावस्तदीयः ।\nकिं वा वैकुण्ठ-लक्ष्म्याप्यहह परमया यत्र मे नास्ति राधा\nकिं त्वाशाप्यस्तु वृन्दावनभुवि मधुरा कोटिजन्मान्तरेपि ॥ २१६ ॥",
+    transliteration: "Kiṃ vā nas-taiḥ suśāstraiḥ kim-atha tad-uditair-vartmabhiḥ sad-gṛhītai-\nr-yatrāsti prema-mūrter-nahi mahima-sudhā nāpi bhāvas-tadīyaḥ |\nKiṃ vā Vaikuṇṭha-lakṣmyāpy-ahaha paramayā yatra me nāsti Rādhā\nkiṃ tv-āśāpy-astu Vṛndāvana-bhuvi madhurā koṭi-janmāntare'pi ||",
+    hindi: "हमें उन सुन्दर शास्त्रों से क्या प्रयोजन है और उनसे निकले तथा महा पुरुषों द्वारा स्वीकार किये गये उन मार्गों (सम्प्रदायों) से भी क्या लेना है? जिनमें प्रेम-मूर्ति श्रीराधा के महिमामृत का अभाव है और उनसे सम्बन्धित भक्ति भाव भी नहीं है। अहह ! हमें उस सर्वश्रेष्ठ वैकुण्ठ की शोभा से भी क्या मतलब है, जहाँ हमारी श्रीराधा नहीं हैं। किंतु कोटि कोटि जन्मों में भी मेरी मधुर आशा तो श्रीवृन्दावन की भूमि में लगी रहे。",
+    hinglish: "Humein un sundar shastron se kya prayojan hai aur unse nikle tatha maha purushon dwara sweekar kiye gaye un margon (sampradayon) se bhi kya lena hai? Jinmein prem-murti Shri Radha ke mahimamrit ka abhav hai aur unse sambandhit bhakti bhaav bhi nahi hai. Ahaha! Humein us sarvashreshth Vaikunth ki shobha se bhi kya matlab hai, jahan hamari Shri Radha nahi hain. Kintu koti koti janmon mein bhi meri madhur aasha toh Shri Vrindavan ki bhumi mein lagi rahe.",
+    translation: "What use have I for those lofty scriptures, or for the paths prescribed by them and accepted by great souls, if they lack the nectar-glory of the \"Embodiment of Love\" (Shri Radha) and the bhava (devotion) related to Her? Ah! What use have I even for the supreme splendor of Vaikuntha, if my Radha is not there? Instead, may my sweet hope remain fixed upon the land of Vrindavan, even for millions of births."
+  },
+  {
+    id: 217,
+    sanskrit: "श्याम श्यामेत्यनुपम-रसापूर्ण-वर्णैर्जपन्ती\nस्थित्वा स्थित्वा मधुर-मधुरोत्तारमुच्चारयन्ती ।\nमुक्तास्थूलान्नयन-गलितानश्रु-विन्दून्वहन्ती\nहृष्यद्रोमा प्रतिपदि चमत्कुर्वती पातु राधा ॥ २१७ ॥",
+    transliteration: "Śyāma Śyāmety-anupama-rasāpūrṇa-varṇair-japantī\nsthitvā sthitvā madhura-madhurottāram-uccārayantī |\nMuktā-sthūlān-nayana-galitān-aśru-vindūn-vahantī\nhṛṣyad-romā pratipadi camatkurvatī pātu Rādhā ||",
+    hindi: "'हे श्याम ! हे श्याम!' इस प्रकार के अनुपम रस से पूर्ण अक्षरों का जप करती हुई, रुक-रुककर अत्यन्त मधुरता पूर्वक ऊँचे स्वर से (उसी नाम का) उच्चारण करती हुई, नेत्रों से झरते हुए मोतियों के समान स्थूल आँसू की बूँदों को वहन करती हुई, रोमाञ्च भूषिता, क्षण-क्षण में चमत्कार की सृष्टि करने वाली (दर्शक के चित्त में आश्चर्य उत्पन्न करने वाली) श्रीराधा मेरी रक्षा करें। (हृदय के सहज नीरसता रूप कष्ट को दूर करें)।",
+    hinglish: "'Hey Shyam! Hey Shyam!' Is prakar ke anupam ras se purn aksharon ka jap karti hui, ruk-rukkar atyant madhurta purvak oonche swar se (usi naam ka) uchcharan karti hui, netron se jharte hue motiyon ke saman sthul aansu ki bundon ko vahan karti hui, romanch bhushita, kshan-kshan mein chamatkar ki srishti karne wali (darshak ke chitt mein aascharya utpann karne wali) Shri Radha meri raksha karein. (Hriday ke sahaj nirsata roop kasht ko door karein).",
+    translation: "May Radha protect me! She who chants the syllables \"Shyama! Shyama!\"—syllables filled with incomparable rasa. Pausing, She repeats the name aloud with supreme sweetness. She bears large teardrops, like pearls, falling from Her eyes. Her hair stands on end in ecstasy, and at every moment, She creates new wonders (for the onlookers). (May She remove the innate dryness of my heart)."
+  },
+  {
+    id: 218,
+    sanskrit: "तादृङ् मूर्तिः व्रजपति-सुतः पादयोर्मे पतित्वा\nदन्ताग्रेणाथ धृत्वा तृणकममलान्काकु-वादान्ब्रवीति ।\nनित्यं चानुव्रजति कुरुते सङ्ग‌मायोद्यमं चे-\nत्युद्वेगं मे प्रणयिनि किमावेदयेयं नु राधे ॥ २१८ ॥",
+    transliteration: "Tādṛṅ mūrtiḥ Vrajapati-sutaḥ pādayor-me patitvā\ndantāgreṇātha dhṛtvā tṛṇakam-amalān-kāku-vādān-bravīti |\nNityaṃ cānuvrajati kurute saṅgamāyodyamaṃ ce-\nty-udvegaṃ me praṇayini kim-āvedayeyaṃ nu Rādhe ||",
+    hindi: "मोहन मूर्ति व्रजेशनन्दन मेरे पैरों में गिरकर तथा दाँतों में तिनका दबाकर अनुनय-विनय पूर्ण बातें करते हैं, मेरा अनुगमन करते हैं और संगम के लिए चेष्टा करते हैं। इस प्रकार के अपने मानसिक उद्वेग को हे प्रीतियुक्ता श्रीराधे! मैं (आप से) कहाँ तक निवेदन करूँ?",
+    hinglish: "Mohan murti Vrajeshnandan mere pairon mein girkar tatha danton mein tinka dabakar anunay-vinay purn baatein karte hain, mera anugaman karte hain aur sangam ke liye cheshta karte hain. Is prakar ke apne mansik udveg ko hey pritiyukta Shri Radhe! Main (aapse) kahan tak nivedan karoon?",
+    translation: "\"O Radhe! O my love! How can I even begin to describe my agitation (udvegam) to You? That enchanting form, the son of Vrajapati (Krishna), falls at my feet, holds a blade of spotless grass between His teeth, and speaks such piteous words! He follows me everywhere and constantly endeavors to unite with me!\""
+  },
+  {
+    id: 219,
+    sanskrit: "चलल्लीलागत्या क्वचिदनु चलद्धंस-मिथुनं\nक्वचित् केकिन्यग्रे कृत-नटन-चन्द्रक्यनुकृति ।\nलताश्लिष्टं शाखिप्रवर-मनुकुर्वत् क्वचिदहो\nविदग्ध-द्वन्द्वं तद्रमत इह वृन्दावन-भुवि ॥ २१९ ॥",
+    transliteration: "Calal-līlā-gatyā kvacid-anu calad-dhaṃsa-mithunaṃ\nkvacit kekiny-agre kṛta-naṭana-candraky-anukṛti |\nLatāśliṣṭaṃ śākhipravaram-anukurvat kvacid-aho\nvidagdha-dvandvaṃ tad-ramata iha Vṛndāvana-bhuvi ||",
+    hindi: "कहीं विलास पूर्ण चाल से चलते हुए, कहीं हंस-हंसनी की चाल का अनुकरण करते हुए, कहीं मोरनी के आगे नाचने वाले मोर का अनुकरण करते हुए और कहीं लता द्वारा आलिंगित तरुवर का अनुकरण करते हुए, अहाअहा! वह चतुर युगल (श्रीश्यामा श्याम) इस वृन्दावन भूमि में रमण कर रहे हैं。",
+    hinglish: "Kahin vilas purn chaal se chalte hue, kahin hans-hansi ki chaal ka anukaran karte hue, kahin morni ke aage naachne wale mor ka anukaran karte hue aur kahin lata dwara aalingit taruvar ka anukaran karte hue, aha-aha! Wah chatur yugal (Shri Shyama-Shyam) is Vrindavan bhumi mein raman kar rahe hain.",
+    translation: "Ah! That clever Couple (Radha-Krishna) is sporting here on the land of Vrindavan! Sometimes They walk with a playful gait; sometimes They imitate the walk of a pair of swans; sometimes They imitate the dance of a peacock (with its chandrika, or tail-feather-eye) before a peahen; and sometimes They imitate a great tree being embraced by a creeper."
+  },
+  {
+    id: 220,
+    sanskrit: "व्याकोशेन्दीवरवृन्द कान्ति लहरी चौरं किशोर द्वयं\nत्वय्ये तत्कुचयोश्चकास्ति किमिदं रूपेण सम्मोहनम् ।\nतन्मामात्म सखीं कुरु द्वितरुणीयं नौ दृढं श्लिष्यति\nस्वच्छायामभिवीक्ष्य मुह्यति हरौ राधास्मितं पातु नः ॥ २४५ ॥",
+    transliteration: "Vyākośendīvarāṣṭā-pada-kamala-rucā hāri kāntyā svayā yat\nKālindīyaṃ surabhim-anilaṃ śītalaṃ sevamānam |\nSāndrānandaṃ nava-nava-rasaṃ prollasat-keli-vṛndaṃ\njyotir-dvandvaṃ madhura-madhuraṃ prema-kandaṃ cakāsti ||",
+    hindi: "अपनी कान्ति से खिले हुए नील कमल तथा सुवर्ण कमल की कान्तियों को हरने वाला, श्रीयमुना की सुगन्धित शीतल वायु का सेवन करता हुआ, सघन आनन्द स्वरूप नित्य नूतन रस से परिपूर्ण, शोभायमान क्रीड़ा समूह से युक्त, मधुराति मधुर प्रेम का मूल कारण (ऐसा) युगल स्वरूप प्रकाश से सुशोभित हो रहे हैं。",
+    hinglish: "Apni kanti se khile hue neel kamal tatha suvarn kamal ki kantiyon ko harne wala, Shri Yamuna ki sugandhit sheetal vayu ka sevan karta hua, saghan anand swaroop nitya nutan ras se paripurn, shobhayaman krida samuh se yukt, madhurati madhur prem ka mool karan (aisa) yugal swaroop prakash se sushobhit ho rahe hain.",
+    translation: "That \"Twin Effulgence\" (Radha-Krishna) shines forth! It is the very root of the sweetest love. With Its own splendor, It steals the radiance of the blossoming blue lotus (Krishna) and the golden lotus (Radha). It enjoys the fragrant, cool breeze of the Yamuna. It is the form of condensed bliss, filled with ever-new rasa, and abounding in brilliant pastimes."
+  },
+  {
+    id: 221,
+    sanskrit: "कदा मधुर-सारिकाः स्वरस-पद्यमध्यापयत्\nप्रदायकरतालिकाः क्वचन नर्तयत्केकिनम् ।\nक्वचित् कनक-वल्लरीवृत-तमाल-लीलाधनं\nविदग्ध-मिथुनं तदद्भुतमुदेति वृन्दावने ॥ २२१ ॥",
+    transliteration: "Kadā madhura-sārikāḥ svarasa-padyam-adhyāpayat\npradāya-kara-tālikāḥ kvacana nartayat-kekinam |\nKvacit kanaka-vallarī-vṛta-tamāla-līlādhanaṃ\nvidagdha-mithunaṃ tad-adbhutam-udeti Vṛndāvane ||",
+    hindi: "कभी तो मधुर स्वर वाला सारिकाओं (मैनाओं) को स्वकीय रस (श्रृंगार रस) से पूर्ण श्लोक पढ़ाता हुआ, कभी अपने हाथ से ताली बजाकर मोर को नचाता हुआ, तथा कहीं स्वर्ण लता से आलिंगित तमाल की लीला को अपना सर्वस्व मानता हुआ वह अद्भुत चतुर युगल (श्रीश्यामाश्याम) श्रीवृन्दावन में प्रकट हो रहे हैं。",
+    hinglish: "Kabhi toh madhur swar wala sarikaon (mainaon) ko swakiya ras (shringar ras) se purn shlok padhata hua, kabhi apne haath se taali bajakar mor ko nachata hua, tatha kahin swarn lata se aalingit tamal ki leela ko apna sarvasva maanta hua wah adbhut chatur yugal (Shri Shyama-Shyam) Shri Vrindavan mein prakat ho rahe hain.",
+    translation: "That wondrous, clever Couple (Radha-Krishna) appears in Vrindavan! Sometimes They teach the sweet-voiced sarikas (mynah birds) verses filled with Their own rasa (shringara-rasa). Sometimes, clapping Their hands, They make the peacocks dance. And sometimes, They cherish as Their greatest treasure the lila of imitating a Tamala tree embraced by a golden creeper."
+  },
+  {
+    id: 222,
+    sanskrit: "पत्रालीं ललितां कपोल-फलके नेत्राम्बुजे कज्जलं\nरङ्गं बिम्बफलाधरे च कुचयोः काश्मीरजा-लेपनम् ।\nश्रीराधे नव-सङ्ग‌माय तरले पादांगुली-पंक्तिषु\nव्यस्यन्ती प्रणयादलक्तकरसं पूर्णा कदा स्यामहम् ॥ २२२ ॥",
+    transliteration: "Patrālīṃ lalitāṃ kapola-phalake netrāmbujē kajjalaṃ\nraṅgaṃ bimbaphalādhare ca kucayoḥ kāśmīrajā-lepanam |\nŚrī-Rādhe nava-saṅgamāya tarale pādāṅgulī-paṅktiṣu\nvyasyantī praṇayād-alaktaka-rasaṃ pūrṇā kadā syām-aham ||",
+    hindi: "नव संगम के लिए अधीर हे श्रीराधे ! आपके कपोलों पर पत्रावली, आपके कमल जैसे नेत्रों में कज्जल, बिम्ब फल के समान अधर पर रंग, वक्षस्थल पर केशर का लेपन और चरणों की अँगुलियों की पंक्तियों में प्रेम पूर्वक महावर लगाती हुई मैं कब पूर्ण रूप से कृतार्थ होऊँगी。",
+    hinglish: "Nav sangam ke liye adhir hey Shri Radhe! Aapke kapolon par patravali, aapke kamal jaise netron mein kajjal, bimb phal ke saman adhar par rang, vakshasthal par keshar ka lepan aur charanon ki anguliyon ki panktiyon mein prem purvak mahavar lagati hui main kab purn roop se kritarth houngi.",
+    translation: "O Shri Radhe, who is restless for a fresh rendezvous! When will I become completely fulfilled by lovingly applying beautiful patterns (patrali) on Your cheeks, kajjala (collyrium) to Your lotus eyes, color to Your bimba-fruit lips, saffron-paste (kashmiraja) to Your breasts, and alaktaka-rasa (red lac) to the lines of Your toes?"
+  },
+  {
+    id: 223,
+    sanskrit: "श्रीगोवर्धन एक एव भवता पाणौ प्रयत्नाद्धृतो\nराधावर्ष्मणि हेमशैल-युगले दृष्टेपि तेस्याद्भयम् ।\nतद्गोपेन्द्रकुमार मा कुरु वृथा गर्व परीहासतः\nकर्ह्येवं वृषभानुनन्दिनि तव प्रेयांसमाभाषये ॥ २२३ ॥",
+    transliteration: "Śrī-Govardhana eka eva bhavatā pāṇau prayatnād-dhṛto\nRādhā-varṣmaṇi hema-śaila-yugale dṛṣṭe'pi te syād-bhayam |\nTad-Gopendra-kumāra mā kuru vṛthā garva parihāsataḥ\nkarhy-evaṃ Vṛṣabhānunandini tava preyāṃsam-ābhāṣaye ||",
+    hindi: "'आपने एक ही श्रीगोवर्धन को प्रयत्न पूर्वक हाथ पर उठाया था और श्रीराधा के शरीर (वर्ष्म) में सुवर्ण के दो पर्वतों को देखते ही आप डर जायँगे। अतः हे गोपेन्द्रकुमार ! व्यर्थ ही गर्व मत करो।' हे श्रीवृषभानु नन्दिनी! आपके प्रियतम से इस प्रकार परिहास पूर्वक मैं कब कहूँगी?",
+    hinglish: "'Aapne ek hi Shri Govardhan ko prayatna purvak haath par uthaya tha aur Shri Radha ke sharir (varshma) mein suvarn ke do parvaton ko dekhte hi aap dar jayenge. Atah hey Gopendra kumar! Vyarth hi garv mat karo.' Hey Shri Vrishabhanu nandini! Aapke priyatam se is prakar parihas purvak main kab kahoongi?",
+    translation: "\"You lifted only one Shri Govardhana hill with effort on Your hand, but You would surely be frightened just seeing the two golden mountains (hema-shaila-yugale) on Radha's body (varshmani)! Therefore, O Gopendrakumara (Krishna), do not be needlessly proud!\" O Vrishabhanu-nandini (Radha)! When will I speak thus in jest to Your beloved?"
+  },
+  {
+    id: 224,
+    sanskrit: "अनंग-जयमंगल-ध्वनित-किंकिणी-डिण्डिमः\nस्तनादिवरताडनैर्नखरदन्तघातैर्युतः ।\nअहो चतुर-नागरी-नव-किशोरयोर्मञ्जुले\nनिकुञ्ज-निलयाजिरे रतिरणोत्सवो जृम्भते ॥ २२४ ॥",
+    transliteration: "Anaṅga-jaya-maṅgala-dhvanita-kiṅkiṇī-ḍiṇḍimaḥ\nstanādi-vara-tāḍanair-nakhara-danta-ghātair-yutaḥ |\nAho chatura-nāgarī-nava-kiśorayor-mañjule\nnikuñja-nilayājire rati-raṇotsavo jṛmbhate ||",
+    hindi: "काम-विजय रूप मंगल की सूचक किंकिणी रूप नगाड़े की ध्वनि से तथा वक्षोज आदि के अच्छी तरह मर्दन एवं (उन पर) नाखून और दाँतों द्वारा किये गये घावों से युक्त, चतुर नागरी श्रीराधा और नवल किशोर श्रीकृष्ण का सुरत-संग्राम रूपी उत्सव अहो, सुन्दर निकुंज-गृह के प्रांगण में चल रहा है。",
+    hinglish: "Kaam-vijay roop mangal ki suchak kinkini roop nagade ki dhvani se tatha vakshoj aadi ke achhi tarah mardan evam (un par) nakhun aur danton dwara kiye gaye ghavon se yukt, chatur nagari Shri Radha aur naval kishor Shri Krishna ka surat-sangram rupi utsav aho, sundar nikunj-grih ke prangan mein chal raha hai.",
+    translation: "Ah! The festival of the battle of love (rati-rana-utsavo) between the clever Nagari (Radha) and the fresh Kishore (Krishna) flourishes in the beautiful courtyard of the nikunja abode! It is accompanied by the auspicious sounds of Ananga's (Cupid's) victory, like the beating of kettle-drums that is the tinkling of Her kinkini (waist-bells). It is filled with the striking of breasts and marked by (love-wounds) from nails and teeth."
+  },
+  {
+    id: 225,
+    sanskrit: "यूनोर्वीक्ष्य दरत्रपा नटकलामादीक्षयन्ती दृशोर्-\nवृन्वाना चकितेन संचितमहा-रत्नस्तनं चाप्युरः ।\nसा काचिद् वृषभानुवेश्मनि सखी-मालासु बालावली-\nमौलिः खेलति विश्व-मोहन-महा-सारुप्यमाचिन्वती ॥ २२५ ॥",
+    transliteration: "Yūnor-vīkṣya daratrapā naṭakalām-ādīkṣayantī dṛśor-\nvṛnvānā cakitena sañcita-mahā-ratna-stanaṃ cāpy-uraḥ |\nSā kācid Vṛṣabhānu-veśmani sakhī-mālāsu bālāvalī-\nmauliḥ khelati viśva-mohana-mahā-sārūpyam-ācinvatī ||",
+    hindi: "युवक-युवतियों की भय एवं लज्जा से युक्त नट जैसी कलाओं को देखकर अपने नेत्रों को (कटाक्ष-पात आदि की) दीक्षा देती हुई, महारत्नों के कोष रूपी श्रीअंग युगल वाले वक्षस्थल को चकित भाव से ढँकती हुई, संसार को मोहित करने वाले श्रीश्यामसुन्दर के साथ पूर्ण समानता का संग्रह करती हुई (रूप और गुण में पूर्णतया उनके समान होने की इच्छा अपने मन में रखती हुई) किशोरियों की शिरोमणि कोई अनिर्वचनीया (श्रीराधा) श्रीवृषभानु-गृह में सखियों के मध्य क्रीड़ा कर रही हैं。",
+    hinglish: "Yuvak-yuvatiyon ki bhay evam lajja se yukt nat jaisi kalaon ko dekhkar apne netron ko (kataksh-pat aadi ki) diksha deti hui, maharatnon ke kosh rupi shri-ang yugal wale vakshasthal ko chakit bhaav se dhankti hui, sansar ko mohit karne wale Shri Shyamsundar ke saath purn samanata ka sangrah karti hui (roop aur gun mein purnataya unke saman hone ki ichchha apne mann mein rakhti hui) kishoriyon ki shiromani koi anirvachaniya (Shri Radha) Shri Vrishabhanu-grih mein sakhiyon ke madhya krida kar rahi hain.",
+    translation: "A certain indescribable \"Crest-Jewel of young maidens\" (Shri Radha) is playing amidst Her friends in the house of Vrishabhanu. Watching the actor-like arts of the youths (boys and girls), which are tinged with shyness, She \"initiates\" Her own eyes (in the art of glancing). With a startled look, She covers Her bosom, which is a treasure-chest of great jewels. She is gathering a complete sarupya (similarity in form and quality) with the Enchanter of the Universe (Krishna)."
+  },
+  {
+    id: 226,
+    sanskrit: "ज्योतिः पुञ्जद्वयमिदमहो मण्डलाकारमस्याः\nवक्षस्युन्मादयति हृदयं किं फलत्यन्यदग्रे ।\nभ्रू कोदण्डं नकृतघटनं सत्कटाक्षौघ बाणैः\nप्राणान्हन्यात्किमु परमतो भावि भूयो न जाने ॥ २२६ ॥",
+    transliteration: "Jyotiḥ-puñja-dvayam-idam-aho maṇḍalākāram-asyāḥ\nvakṣasy-unmādayati hṛdayaṃ kiṃ phalaty-anyad-agre |\nBhrū-kodaṇḍaṃ na-kṛta-ghaṭanaṃ sat-kaṭākṣaugha-bāṇaiḥ\nprāṇān-hanyāt-kimu param-ato bhāvi bhūyo na jāne ||",
+    hindi: "कैसे आश्चर्य की बात है कि, इन (श्रीराधा) के वक्षस्थल पर मण्डलाकार यह दो ज्योति समूह (श्रीअंग) (देखने मात्र से ही) हृदय को उन्मत्त बना रहे हैं तो आगे चलकर यह न जाने क्या प्रभाव दिखलायेंगे? (इसी प्रकार) कुटिल कटाक्ष रूपी बाण-समूह से युक्त हुए बिना ही भृकुटि रूपी धनुष प्राणों का हनन कर रहा है- इससे आगे और क्या होगा यह मैं नहीं जानता。",
+    hinglish: "Kaise aascharya ki baat hai ki, in (Shri Radha) ke vakshasthal par mandalakar yeh do jyoti samuh (shri-ang) (dekhne matra se hi) hriday ko unmatt bana rahe hain toh aage chalkar yeh na jaane kya prabhav dikhlayenge? (Isi prakar) kutil kataksh rupi baan-samuh se yukt hue bina hi bhrikuti rupi dhanush pranon ka hanan kar raha hai- isse aage aur kya hoga yeh main nahi jaanta.",
+    translation: "What a wonder! This pair of circular effulgent orbs (breasts) on Her (Radha's) chest maddens the heart just by sight; what effect will they produce in the future? Similarly, Her bow-like eyebrows, even without being joined with the arrows of Her sidelong glances, are capable of taking away one's life. What more will happen beyond this, I do not know."
+  },
+  {
+    id: 227,
+    sanskrit: "भोः श्रीदामन्सुबल वृषभस्तोक कृष्णार्जुनाद्याः\nकिं वो दृष्टं मम चकिता दृग्गता नैव कुञ्ज ।\nकाचिद्देवी सकल भुवनाप्लावि लावण्य पूरा\nदूरादेवाखिलमहरत प्रेयसो वस्तु सख्युः ॥ २२७ ॥",
+    transliteration: "Bhoḥ Śrīdāman-Subala-Vṛṣabha-Stoka-Kṛṣṇārjunādyāḥ\nkiṃ vo dṛṣṭaṃ mama cakitā dṛg-gatā naiva kuñjam |\nKācid-devī sakala-bhuvanāplāvi-lāvaṇya-pūrā\ndūrād-evākhilam-aharata preyaso vastu sakhyuḥ ||",
+    hindi: "हे श्रीदाम ! सुबल ! वृषभ ! स्तोक कृष्ण ! अर्जुनादि सखाओं ! क्या तुमने देखा है? मेरी चकित दृष्टि तो कुंज के अन्दर जा ही नहीं पाई। अपने सौन्दर्य के प्रवाह से सम्पूर्ण लोकों को डुबा देने वाली किसी देवी (श्रीराधिका) ने तुम्हारे प्रिय सखा (श्रीकृष्ण) के सर्वस्व को दूर से ही हरण कर लिया है。",
+    hinglish: "Hey Shridama! Subala! Vrishabha! Stoka Krishna! Arjunadi sakhaon! Kya tumne dekha hai? Meri chakit drishti toh kunj ke andar ja hi nahi payi. Apne saundarya ke pravah se sampurn lokon ko duba dene wali kisi devi (Shri Radhika) ne tumhare priya sakha (Shri Krishna) ke sarvasva ko door se hi haran kar liya hai.",
+    translation: "\"O Shridama! Subala! Vrishabha! Stoka-Krishna! Arjuna and all my friends! Did you see that? My startled eyes could not even penetrate the kunja. A certain goddess (Devi), who inundates all the worlds with the flood of Her beauty, has, just from a distance, stolen the entire heart (lit. 'everything') of your dear friend (Krishna)!\""
+  },
+  {
+    id: 228,
+    sanskrit: "गता दूरे गावो दिनमपि तुरीयांशमभज-\nद्वयं हातुं क्लान्तास्तव च जननी वर्त्मनयना ।\nअकस्मात् तूष्णीके सजलनयने दीन वदने\nलुठत्यस्यां भूमौ त्वयि नहि वयं प्राणिणिषवः ॥ २२८ ॥",
+    transliteration: "Gatā dūre gāvo dinam-api turīyāṃśam-abhaja-\nd-vayaṃ hātuṃ klāntās-tava ca jananī vartma-nayanā |\nAkasmāt tūṣṇīke sajala-nayane dīna-vadane\nluṭhaty-asyāṃ bhūmau tvayi nahi vayaṃ prāṇiṇiṣavaḥ ||",
+    hindi: "गाय बहुत दूर चली गई हैं, दिन भी चौथाई शेष रह गया है, हम तुम्हें छोड़कर जा नहीं सकते और (उधर) तुम्हारी माँ की आँखें तुम्हारी राह पर लगी हैं (सखाओं का तात्पर्य यह है कि यदि हम तुम्हें छोड़कर जा सकते तो हम तुम्हारी माँ को तुम्हारी वर्तमान स्थिति की सूचना दे देते और वे तुम्हें आकर सँभाल लेतीं)। तुम जब इस प्रकार अचानक ही चुप हो गये हो और आँखों में आँसू भरकर उदास मुख से इस भूमि पर लोट रहे हो तो हम भी जीना नहीं चाहते。",
+    hinglish: "Gaay bahut door chali gayi hain, din bhi chauthai shesh reh gaya hai, hum tumhein chhodkar ja nahi sakte aur (udhar) tumhari maa ki aankhein tumhari raah par lagi hain. Tum jab is prakar achanak hi chup ho gaye ho aur aankhon mein aansu bharkar udas mukh se is bhumi par lot rahe ho toh hum bhi jina nahi chahte.",
+    translation: "\"The cows have wandered far, and only a quarter of the day remains. We are too weary to leave you, and (besides) your mother's eyes are fixed on the path, waiting for you. Since you have suddenly become silent, with tear-filled eyes and a miserable face, and are rolling on the ground, we too no longer wish to live!\""
+  },
+  {
+    id: 229,
+    sanskrit: "नासाग्रे नव मौक्तिकं सुरुचिरं स्वर्णोज्ज्वलं बिभ्रती\nनानाभंगिरनंग रंग विलसल्लीला तरंगावलिः ।\nराधे त्वं प्रविलोभय व्रजमणि रत्नच्छटा मञ्जरी\nचित्रोदंचितकंचुकस्थ गितयोर्वक्षोजयोः शोभया ॥ २२९ ॥",
+    transliteration: "Nāsāgre nava-mauktikaṃ suruciraṃ svarṇojjvalaṃ bibhratī\nnānā-bhaṅgir-anaṅga-raṅga-vilasal-līlā-taraṅgāvaliḥ |\nRādhe tvaṃ pravilobhaya Vrajamaṇiṃ ratnacchaṭā-mañjarī-\ncitrodañcita-kañcukastha-gitayor-vakṣojayoḥ śobhayā ||",
+    hindi: "हे श्रीराधे! नासिका के अग्रभाग में स्वर्ण जटित उज्ज्वल सुन्दर नूतन मुक्ता को धारण करती हुई, (एवं) अनेक प्रकार के हाव-भावों से युक्त प्रेम-रंग की लीला तरंगों के समूह से सुशोभित होती हुई, आप विभिन्न रत्नों की छटा समूह से चित्र-विचित्र बनी हुई तथा ऊपर की ओर उठी हुई कंचुकी से ढके हुए श्रीअंगों की शोभा से व्रजमणि श्रीश्यामसुन्दर को लुभाइये。",
+    hinglish: "Hey Shri Radhe! Nasika ke agrabhag mein swarn jatit ujjwal sundar nutan mukta ko dharan karti hui, (evam) anek prakar ke haav-bhavon se yukt prem-rang ki leela tarangon ke samuh se sushobhit hoti hui, aap vibhinn ratnon ki chhata samuh se chitra-vichitra bani hui tatha oopar ki aur uthi hui kanchuki se dhake hue shri-angon ki shobha se Vrajmani Shri Shyamsundar ko lubhaiye.",
+    translation: "O Radhe! While wearing a beautiful, bright, new, gold-set pearl on the tip of Your nose, and revealing waves of playful lila arising from the joy of ananga (love); You should now entice the \"Jewel of Vraja\" (Krishna) with the splendor of Your bosom! (That bosom which is) covered by a kanchuki (blouse) that is studded with clusters of radiant, colorful gems and is uplifted."
+  },
+  {
+    id: 230,
+    sanskrit: "अप्रेक्षे कृत निश्चयापि सुचिरं वीक्षेत दृक्कोणतो\nमौने दार्व्यमुपाश्रितापि निगदेत्तामेव याहीत्यहो ।\nअस्पर्श सुधृताशयापि करयोर्धृत्वा बहिर्यापये-\nद्राधाया इति मानदुस्थितिमहं प्रेक्षे हसन्ती कदा ॥ २३० ॥",
+    transliteration: "Aprekṣe kṛta-niścayāpi suciraṃ vīkṣeta dṛk-koṇato\nmaune dārḍhyam-upāśritāpi nigadet-tām-eva yāhīty-aho |\nAsparśe sudhṛtāśayāpi karayor-dhṛtvā bahir-yāpayed-\nRādhāyā iti māna-dusthitim-ahaṃ prekṣe hasantī kadā ||",
+    hindi: "कैसा आश्चर्य है कि (प्रियतम की ओर) न देखने का निश्चय करके भी बहुत देर तक उनकी ओर नेत्र के कोने से देख लेती हैं, दृढ़तापूर्वक मौन का आश्रय लेने पर भी 'उसी के पास जाइये' यह कह देती हैं, (प्रियतम को) स्पर्श न करने का सुदृढ़ विचार करके भी उनके दोनों हाथ पकड़ कर (कुञ्ज से) बाहर निकाल देती हैं। श्रीराधा के मान की इस प्रकार की विचित्र (विपरीत) स्थिति को हँसती हुई मैं कब देखूँगी?",
+    hinglish: "Kaisa aascharya hai ki (priyatam ki aur) na dekhne ka nishchay karke bhi bahut der tak unki aur netra ke kone se dekh leti hain, dridhata purvak maun ka aashray lene par bhi 'usi ke paas jaiye' yeh keh deti hain, (priyatam ko) sparsh na karne ka sudridh vichar karke bhi unke donon haath pakad kar (kunj se) bahar nikal deti hain. Shri Radha ke maan ki is prakar ki vichitra (viprit) sthiti ko hansti hui main kab dekhoongi?",
+    translation: "Ah, what a wonder! Though determined not to look, She still glances for a long time from the corner of Her eye. Though firmly resolved to be silent, She still blurts out, \"Go to her!\" Though firmly intent on not touching Him, She grabs both His hands and pushes Him out! When will I, laughing, behold this contradictory plight of Shri Radha's maana (prideful anger)?"
+  },
+  {
+    id: 231,
+    sanskrit: "रसागाधे राधा हृदि सरसि हंसः करतले\nलसद्वंशस्रोतस्यमृत गुण संगः प्रतिपदम् ।\nचलत्पिच्छोत्तंसः सुरचितवतंसः प्रमदया\nस्फुरद् गुञ्जा गुच्छः स हि रसिक मौलिर्मिलतु माम् ॥ २३१ ॥",
+    transliteration: "Rasāgādhe Rādhā-hṛdi sarasi haṃsaḥ karatale\nlasad-vaṃśa-srotasy-amṛta-guṇa-saṅgaḥ pratipadam |\nCalat-picchottaṃsaḥ suracitavataṃsaḥ pramadayā\nsphurad-guñjā-gucchaḥ sa hi rasika-maulir-milatu mām ||",
+    hindi: "श्रीराधा के अगाध रस से परिपूर्ण हृदय रूपी सरोवर में जो हंस के समान हैं, हाथ में शोभायमान वंशी के छिद्रों में से (प्रकट होने वाले) आनन्दमय गुण (संगीत-भेद) प्रतिक्षण जिनके साथ में रहते हैं, चंचल मोर मुकुट धारण करने वाले, प्रमदा (श्रीराधा) द्वारा सुरुचिपूर्वक पहिनाये गये कानों के आभूषणों से सुशोभित और देदीप्यमान गुञ्जाओं के गुच्छ से अलंकृत वह रसिक शेखर (श्रीश्यामसुन्दर) मुझे मिलें。",
+    hinglish: "Shri Radha ke agaadh ras se paripurn hriday rupi sarovar mein jo hans ke saman hain, haath mein shobhayaman vanshi ke chhidron mein se (prakat hone wale) anandmay gun (sangit-bhed) pratikshan jinke saath mein rehte hain, chanchal mor mukut dharan karne wale, pramada (Shri Radha) dwara suruchipurvak pahinaye gaye kanon ke aabhushanon se sushobhit aur dedipyaman gunjaon ke guchh se alankrit wah rasik shekhar (Shri Shyamsundar) mujhe milein.",
+    translation: "May that Crest-Jewel of Rasikas (Shri Krishna) meet me! He is the swan in the unfathomable lake of Radha's heart. From the holes of the shining flute in His hand, nectarous qualities (melodies) flow at every step. He wears a swaying peacock-feather crown, earrings artfully placed by His beloved (Radha), and is adorned with glittering bunches of gunja beads."
+  },
+  {
+    id: 232,
+    sanskrit: "अकस्मात्कस्याश्चिन्नव वसनमाकर्षति परं\nमुरल्या धम्मिल्ले स्पृशति कुरुतेऽन्या कर धृतिम् ।\nपरं नित्यं राधा पदकमल मूले व्रज पुरे\nतदित्थं वीथीषु भ्रमति स महा लम्पट मणिः ॥ २३२ ॥",
+    transliteration: "Akasmāt-kasyāścin-nava-vasanam-ākarṣati paraṃ\nmuralyā dhammille spṛśati kurute'nyā-kara-dhṛtim |\nParaṃ nityaṃ Rādhā-padakamala-mūle Vraja-pure\ntad-itthaṃ vīthīṣu bhramati sa mahā-lampaṭa-maṇiḥ ||",
+    hindi: "अचानक किसी एक (गोपी) के नवीन वस्त्र को खींचते हैं, दूसरी किसी के केशपाश को वंशी से स्पर्श करते हैं, किसी दूसरी का हाथ पकड़ते हैं किन्तु नित्य ही श्रीराधा के पद-कमल के मूल में लोटते रहते हैं। इस प्रकार व्रजपुर की गलियों में वह महा लम्पट शिरोमणि (श्रीश्यामसुन्दर) घूमते रहते हैं。",
+    hinglish: "Achanak kisi ek (gopi) ke naveen vastra ko khinchte hain, dusri kisi ke keshpash ko vanshi se sparsh karte hain, kisi dusri ka haath pakadte hain kintu nitya hi Shri Radha ke pad-kamal ke mool mein lotte rehte hain. Is prakar Vrajpur ki galiyon mein wah maha lampat shiromani (Shri Shyamsundar) ghumte rehte hain.",
+    translation: "Suddenly, He pulls the fresh garment of one (Gopi); He touches another's braided hair with His flute; He grabs the hand of yet another. However (param), He eternally rolls at the very feet of Shri Radha. In this way, that \"Jewel of Profligates\" (Maha Lampata Mani, Krishna) wanders the lanes of Vraja."
+  },
+  {
+    id: 233,
+    sanskrit: "एकस्या रतिचौर एव चकितं चान्यास्तनान्ते करं\nकृत्वा कर्षति वेणुनान्य सुदृशौ धम्मिल्ल मल्ली स्रजम् ।\nधत्तेऽन्या भुजवल्लिमुत्पुलकितां संकेत यत्यन्यया\nराधायाः पदयोर्लुठत्यलममुं जाने महा लम्पटम् ॥ २३३ ॥",
+    transliteration: "Ekasyā rati-caura eva cakitaṃ cānyā-stanānte karaṃ\nkṛtvā karṣati veṇunānya-sudṛśau dhammilla-mallī-srajam |\nDhatte'nyā-bhujavallim-utpulakitāṃ saṅketayaty-anyayā\nRādhāyāḥ padayor-luṭhaty-alam-amuṃ jāne mahā-lampaṭam ||",
+    hindi: "किसी एक (गोपी) के साथ लुक छिपकर प्रेम करते हैं, दूसरी के वक्ष स्थल पर हाथ रखते हैं, किसी सुनयनी के केशपाश में बँधी मल्ली की माला को वेणु से खींचते हैं, अन्य किसी की रोमांचित भुजलता को पकड़ लेते हैं तथा किसी (गोपी) को संकेत द्वारा मिलने की जगह बताते हैं (किन्तु) श्रीराधा के चरणों में केवल लोटते ही रहते हैं। इस महा लम्पट को मैं अच्छी तरह पहिचानती हूँ。",
+    hinglish: "Kisi ek (gopi) ke saath luk chipkar prem karte hain, dusri ke vaksh sthal par haath rakhte hain, kisi sunayani ke keshpash mein bandhi malli ki mala ko venu se khinchte hain, anya kisi ki romanchit bhujlata ko pakad lete hain tatha kisi (gopi) ko sanket dwara milne ki jagah batate hain (kintu) Shri Radha ke charanon mein keval lotte hi rehte hain. Is maha lampat ko main achhi tarah pehchanti hoon.",
+    translation: "He steals amorous moments (rati-chaura) with one (Gopi) in secret; He places His hand on the breast of another. He pulls the jasmine garland from the hair of a beautiful-eyed Gopi with His flute. He seizes another's arm, making it thrill with goosebumps, and gestures a rendezvous to yet another. But, He only rolls at the feet of Shri Radha. Enough! I know this great profligate (Maha Lampata) well."
+  },
+  {
+    id: 234,
+    sanskrit: "प्रियांसे निक्षिप्तोत्पुलक भुजदण्डः क्वचिदपि\nभ्रमन्वृन्दारण्ये मदकल करीन्द्राद् भुतगतिः ।\nनिजां व्यंजन्नत्यद्भुत सुरत शिक्षां क्वचिदहो\nरहः कुञ्ज गुंजा ध्वनितमधुपे क्रीडति हरिः ॥ २३४ ॥",
+    transliteration: "Priyāṃse nikṣiptotpulaka-bhuja-daṇḍaḥ kvacid-api\nbhraman-Vṛndāraṇye madakala-karīndrādbhuta-gatiḥ |\nNijāṃ vyañjann-aty-adbhuta-surata-śikṣāṃ kvacid-aho\nrahaḥ-kuñja-guñjā-dhvanita-madhupe krīḍati Hariḥ ||",
+    hindi: "कभी तो श्रीप्रिया जू के कन्धे पर रोमांचित भुजदण्ड को डाले मदोन्मत्त गजराज की भाँति अद्भुत गति से वृन्दावन में घूमते फिरते हैं और कभी, अहो ! भ्रमरों के गुञ्जार से युक्त एकान्त कुंज में, अपनी विलक्षण प्रेम-परिपाटी को प्रकट करते हुए श्रीहरि क्रीड़ा करते हैं。",
+    hinglish: "Kabhi toh Shri Priya ju ke kandhe par romanchit bhujdand ko dale madonmatt gajaraj ki bhanti adbhut gati se Vrindavan mein ghumte phirte hain aur kabhi, aho! Bhramaron ke gunjar se yukt ekant kunj mein, apni vilakshan prem-paripati ko prakat karte hue Shri Hari krida karte hain.",
+    translation: "Sometimes, Hari wanders in Vrindavan with His mighty, thrilled arm resting on His beloved's (Radha's) shoulder, His gait as wondrous as an intoxicated kingly elephant. At other times, ah! He plays in a secluded kunja, filled with the humming of bees, revealing His own supremely wondrous art of surata (amorous love)."
+  },
+  {
+    id: 235,
+    sanskrit: "दूरे सृष्ट्यादिवार्त्ता न कलयति मनाङ्नारदादीन्स्वभक्ता-\nञ्छ्रीदामाद्यैः सुहृद्भिर्न मिलति हरति स्नेह वृद्धिं स्वपित्रोः ।\nकिन्तु प्रेमैकसीमां मधुर रससुधासिन्धु सारैरगाधां\nश्रीराधामेव जानन्मधुपतिरनिशं कुंजवीथीमुपास्ते ॥ २३५ ॥",
+    transliteration: "Dūre sṛṣṭyādi-vārttā na kalayati manāṅ-Nāradādīn-svabhaktā-\nñ-Chrīdāmādyaiḥ suhṛdbhir-na milati harati sneha-vṛddhiṃ svapitroḥ |\nKintu premaika-sīmāṃ madhura-rasa-sudhā-sindhu-sārair-agādhāṃ\nŚrī-Rādhām-eva jānan-Madhupatir-aniśaṃ kuñja-vīthīm-upāste ||",
+    hindi: "सृष्टि-रचना आदि की बात तो दूर रही, अपने नारद आदि भक्तों को भी नहीं पहिचानते, श्रीदामा आदि मित्रों से नहीं मिलते तथा अपने माता-पिता के स्नेह को भी बढ़ावा नहीं देते, किन्तु प्रेम की परमावधि स्वरूपा तथा मधुर रस रूपी अमृत-सिन्धु के सार की अगाध आश्रय एकमात्र श्रीराधा को ही जानते हुए मधुपति (श्रीश्यामसुन्दर) निरन्तर कुंज गलियों की उपासना करते रहते हैं。",
+    hinglish: "Srishti-rachna aadi ki baat toh door rahi, apne Narad aadi bhakton ko bhi nahi pehchante, Shridama aadi mitron se nahi milte tatha apne mata-pita ke sneh ko bhi badhava nahi dete, kintu prem ki paramavadhi swarupa tatha madhur ras rupi amrit-sindhu ke saar ki agaadh aashray ekmatra Shri Radha ko hi jaante hue Madhupati (Shri Shyamsundar) nirantar kunj galiyon ki upasana karte rehte hain.",
+    translation: "Talk of creation, etc., is far away; He (Krishna) pays no mind even to His own devotees like Narada; He does not meet His friends like Shridama; He even neglects the growing affection of His own parents. Instead, knowing Shri Radha alone—She who is the ultimate limit of love and the unfathomable source of the nectar-ocean of sweet rasa—Madhupati (Krishna) incessantly worships the lanes of the kunjas."
+  },
+  {
+    id: 236,
+    sanskrit: "सुस्वादु सुरस तुन्दिलमिन्दीवर वृन्द सुन्दरं किमपि ।\nअधिवृन्दाटवि नन्दति राधा वक्षोज भूषणं ज्योतिः ॥ २३६ ॥",
+    transliteration: "Susvādu-surasa-tundilam-indīvara-vṛnda-sundaraṃ kimapi |\nAdhi-Vṛndāṭavi nandati Rādhā-vakṣoja-bhūṣaṇaṃ jyotiḥ ||",
+    hindi: "अत्यन्त आस्वादनीय मधुर रस से परिपुष्ट, नील कमल के समूह के समान सुन्दर, श्रीराधा के वक्षस्थल की आभूषण रूपा कोई अनिर्वचनीया ज्योति (श्रीश्यामसुन्दर) श्रीवृन्दावन में आनन्दित हो रही है。",
+    hinglish: "Atyant aasvadaniya madhur ras se paripusht, neel kamal ke samuh ke saman sundar, Shri Radha ke vakshasthal ki aabhushan rupa koi anirvachaniya jyoti (Shri Shyamsundar) Shri Vrindavan mein anandit ho rahi hai.",
+    translation: "An indescribable Effulgence (Jyoti, Shri Krishna) delights in Vrindavan. It is supremely relishable and rich with sweet rasa; It is as beautiful as a cluster of blue lotuses; and It serves as the ornament on Shri Radha's bosom."
+  },
+  {
+    id: 237,
+    sanskrit: "कान्तिः कापि परोज्ज्वला नवमिलच्छ्री चन्द्रिकोद्भासिनी\nरामाद्यद्भुत वर्ण काञ्चितरुचिर्नित्याधिकाङ्गच्छविः ।\nलज्जानम्रतनुः स्मयेन मधुरा प्रीणाति केलिच्छटा\nसन्मुक्ताफलचारु हार सुरुचिः स्वात्मार्पणेनाच्युतम् ॥ २३७ ॥",
+    transliteration: "Kāntiḥ kāpi parojjvalā nava-milac-chrī-candrikodbhāsinī\nRamādy-adbhuta-varṇa-kāñcita-rucir-nityādhikāṅgacchaviḥ |\nLajjā-namra-tanuḥ smayena madhurā prīṇāti kelicchaṭā\nsan-muktāphala-cāru-hāra-suruciḥ svātmार्पणेनाच्युतम् ||",
+    hindi: "(जो) क्षण-क्षण में नवीन बनने वाली शोभा से सम्पन्न चाँदनी को जगमगा देने वाली हैं, अत्यन्त अद्भुत रूप-रंग वाली लक्ष्मी आदि रमणियाँ जिसकी कान्ति का पूजन करती हैं, (जो) नित्य अधिक विकसित होने वाली अंगों की छवि से युक्त हैं, (जो) लज्जा से झुकी हुई, मुस्कान से मधुर बनी हुई और विविध लीला-विलासों की छटा से युक्त हैं, (जो) शुभ्र मोतियों से रचित मनोहर हार की सुन्दर कान्ति से सुशोभित हैं (वह) कोई अनिर्वचनीय परम उज्ज्वल कान्ति (श्रीराधा) अपना सर्वस्व अर्पण करके अपने प्राणनाथ को प्रसन्न कर रही हैं。",
+    hinglish: "(Jo) kshan-kshan mein naveen banne wali shobha se sampann chandni ko jagmaga dene wali hain, atyant adbhut roop-rang wali Lakshmi aadi ramaniyan jiski kanti ka pujan karti hain, (jo) nitya adhik viksit hone wali angon ki chhavi se yukt hain, (jo) lajja se jhuki hui, muskan se madhur bani hui aur vividh leela-vilason ki chhata se yukt hain, (jo) shubhra motiyon se rachit manohar haar ki sundar kanti se sushobhit hain (wah) koi anirvachaniya param ujjwal kanti (Shri Radha) apna sarvasva arpan karke apne prannath ko prasann kar rahi hain.",
+    translation: "That certain, supremely radiant Effulgence (Kanti, Shri Radha) illuminates even the splendor of the fresh moonlight. Her radiance is worshipped by Lakshmi (Rama) and other wondrous consorts. Her bodily luster is ever-increasing. Her form is bowed with modesty (lajja), sweet with smiles, and full of playful grace. Adorned with the glow of a beautiful necklace of pure pearls, She pleases Achyuta (Krishna) by surrendering Her very self."
+  },
+  {
+    id: 238,
+    sanskrit: "यन्नारदाजेश शुकैरगम्यं वृन्दावने वञ्जुल मञ्जु कुञ्ज ।\nतत्कृष्ण चेतोहरणैक विज्ञमत्रास्ति किञ्चित्परमं रहस्यम् ॥ २३८ ॥",
+    transliteration: "Yan-Nāradājeśa-Śukair-agamyaṃ Vṛndāvane vañjula-mañju-kuñje |\nTat-Kṛṣṇa-ceto-haraṇaika-vijñam-atrāsti kiñcit-paramaṃ rahasyam ||",
+    hindi: "जो नारद, ब्रह्मा, शंकर और शुक की पहुँच से परे हैं, वह श्रीकृष्ण के हृदय को चुराने में एकमात्र कुशल कोई अनिर्वचनीय परम रहस्य (श्रीराधा) इस वृन्दावन में अशोक (वृक्ष) की सुन्दर कुंज में विराजमान हैं。",
+    hinglish: "Jo Narad, Brahma, Shankar aur Shuk ki pahunch se pare hain, wah Shri Krishna ke hriday ko churane mein ekmatra kushal koi anirvachaniya param rahasya (Shri Radha) is Vrindavan mein Ashok (vriksh) ki sundar kunj mein virajman hain.",
+    translation: "That which is inaccessible to Narada, Brahma (Aja), Isha (Shiva), and Shuka; That which is singularly expert in stealing the heart of Krishna—That certain, supreme mystery (Shri Radha) resides here in Vrindavan, in a beautiful bower of Ashoka (vanjula) trees."
+  },
+  {
+    id: 239,
+    sanskrit: "लक्ष्म्या यश्च न गोचरी भवति यन्नापुः सखायः प्रभोः\nसम्भाव्योपि विरञ्चि नारद शिव स्वायंभुवाद्यैर्न यः ।\nयो वृन्दावननागरी पशुपति स्त्रीभाव लभ्यः कथं\nराधामाधवयोर्ममास्तु स रहो दास्याधिकारोत्सवः ॥ २३९ ॥",
+    transliteration: "Lakṣmyā yaś-ca na gocarī-bhavati yan-nāpuḥ sakhāyaḥ prabhoḥ\nsambhāvyopi Viriñci-Nārada-Śiva-Svāyaṃbhuvādyair-na yaḥ |\nYo Vṛndāvananāgarī-paśupati-strībhāva-labhyaḥ kathaṃ\nRādhā-Mādhavayor-mamāstu sa raho-dāsyādhikārotsavaḥ ||",
+    hindi: "लक्ष्मी को भी जिसका साक्षात्कार नहीं होता, जिसे श्रीदामा आदि सखागण भी प्राप्त नहीं कर सके, जो ब्रह्मा, नारद, शिव, सनकादि के द्वारा कल्पनीय नहीं है, जो श्रीवृन्दावन की नागरी ललितादिकों के सखी भाव द्वारा (ही) प्राप्त है, श्रीराधामाधव के उस एकान्त दास्य का अधिकार मुझे कैसे मिले?",
+    hinglish: "Lakshmi ko bhi jiska sakshatkar nahi hota, jise Shridama aadi sakhagan bhi prapt nahi kar sake, jo Brahma, Narad, Shiv, Sanakadi ke dwara kalpnaiya nahi hai, jo Shri Vrindavan ki nagari Lalitadikon ke sakhi bhaav dwara (hi) prapt hai, Shri Radha-Madhav ke us ekant daasya ka adhikar mujhe kaise mile?",
+    translation: "That which is not perceived even by Lakshmi; that which the Lord's friends (like Shridama) could not attain; that which cannot be conceived of even by Brahma (Virinchi), Narada, Shiva, or the Sanakadi (Svayambhuva)... That which is obtainable only through the gopi-bhava (female mood) of the Nagaris (heroines) of Vrindavan (like Lalita)—how, oh how, shall I attain the joyous festival of that raho-dasya (intimate service) of Radha and Madhava?"
+  },
+  {
+    id: 240,
+    sanskrit: "उच्छिष्टामृत भुक्तवैव चरितं शृण्वंस्तवैव स्मरन्\nपादाम्भोज रजस्तवैव विचरन् कुञ्जान्स्तवैवालयान् ।\nगायन्दिव्य गुणांस्तवैव रसदे पश्यंस्तवैवाकृतिं\nश्रीराधे तनुवाङ्गनोभिरमलैः सोहं तवैवाश्रितः ॥ २४० ॥",
+    transliteration: "Ucchiṣṭāmṛta-bhuktavaiva caritaṃ śṛṇvaṃs-tavaiva smaran\npādāmbhoja-rajas-tavaiva vicaran kuñjāṃs-tavaivālayān |\nGāyan-divya-guṇāṃs-tavaiva rasade paśyaṃs-tavaivākṛtiṃ\nŚrī-Rādhe tanu-vāṅ-manobhir-amalaiḥ so'haṃ tavaivāśritaḥ ||",
+    hindi: "रस (दास्य रस) को प्रदान करने वाली हे श्रीराधे! आपके ही अमृत तुल्य उच्छिष्ट (जूँठन) को ग्रहण करता हुआ, आपके ही चरित्र को सुनता हुआ, आपके ही चरण-कमल की रज का ध्यान करता हुआ, आपके ही निवास स्थल कुंजों में विचरण करता हुआ, आपके ही दिव्य गुणों का गान करता हुआ और आपकी ही आकृति (रूप) का दर्शन करता हुआ मैं अपने निर्मल शरीर, वाणी और मन से आपके ही आश्रित हूँ。",
+    hinglish: "Ras (daasya ras) ko pradan karne wali hey Shri Radhe! Aapke hi amrit tulya uchchhishta (joothan) ko grahan karta hua, aapke hi charitra ko sunta hua, aapke hi charan-kamal ki raj ka dhyan karta hua, aapke hi nivas sthal kunjon mein vicharan karta hua, aapke hi divya gunon ka gaan karta hua aur aapki hi aakriti (roop) ka darshan karta hua main apne nirmal sharir, vani aur mann se aapke hi aashrit hoon.",
+    translation: "O Shri Radhe! O Bestower of rasa! Only eating Your nectarous uchchhishta (remnants); only hearing Your charitram (pastimes); only meditating on the dust of Your lotus feet; only wandering in Your abodes, the kunjas; only singing Your divine qualities; and only seeing Your form—thus, I am surrendered to You alone, with my pure body, speech, and mind."
+  },
+  {
+    id: 241,
+    sanskrit: "क्रीड़न्मीनद्वयाक्ष्याः स्फुरदधरमणी विद्रुमश्रोणिभार\nद्वीपायामोन्तराल स्मर कलभ कटाटोप वक्षोरुहायाः ।\nगम्भीरावर्तनाभेर्बहलहरि महाप्रेम पीयूष सिन्धोः\nश्रीराधायाः पदाम्भोरुह परिचरणे योग्यतामेव चिन्वे ॥ २४१ ॥",
+    transliteration: "Krīḍan-mīna-dvayākṣyāḥ sphurad-adhara-maṇī-vidruma-śroṇibhāra-\ndvīpāyāmontarāla-smara-kalabha-kaṭāṭopa-vakṣoruhāyāḥ |\nGambhīrāvartanābher-bahala-Hari-mahāprema-pīyūṣa-sindhoḥ\nŚrī-Rādhāyāḥ padāmbhoruha-paricaraṇe yogyatām-eva cinve ||",
+    hindi: "खेलते हुए दो मीनों के समान जिनके नेत्र हैं, देदीप्यमान श्रेष्ठ मूँगामणि की तरह अधर हैं, द्वीप के विस्तार की भाँति नितम्ब भार है, मध्य भाग में अनंग (कामदेव) रूपी गज-शावक (हाथी के बच्चे) के गण्डस्थल के आटोप (उभार) की भाँति वक्षस्थल हैं, भँवर की भाँति नाभि है, (तथा जो) श्रीहरि के लिए महा प्रेमामृत सिन्धु के समान हैं उन श्रीराधा के चरण कमल की परिचर्या की योग्यता को ही मैं खोज रहा हूँ。",
+    hinglish: "Khelte hue do meenon ke saman jinke netra hain, dedipyaman shreshth mungamani ki tarah adhar hain, dweep ke vistar ki bhanti nitamb bhar hai, madhya bhag mein Anang (kaamdev) rupi gaj-shavak (haathi ke bachche) ke gandsthal ke aatop (ubhaar) ki bhanti vakshasthal hain, bhanvar ki bhanti nabhi hai, (tatha jo) Shri Hari ke liye maha premamrit sindhu ke saman hain un Shri Radha ke charan kamal ki paricharya ki yogyata ko hi main khoj raha hoon.",
+    translation: "I seek only the qualification (yogyata) to serve the lotus feet of Shri Radha. She is an ocean of abundant, nectarean love for Hari. Her charming eyes are like two playing fish; Her shining lips are like coral jewels; Her heavy hips are like expansive islands; Her breasts are like the raised temples of a playful young elephant (smara-kalabha); and Her navel is like a deep whirlpool."
+  },
+  {
+    id: 242,
+    sanskrit: "मालाग्रन्थन शिक्षया मृदु मृदु श्रीखण्ड निर्घर्षणा\nदेशेनाद्भुत मोदकादिविधिभिः कुञ्जान्त सम्मार्जनैः ।\nवृन्दारण्य रहः स्थलीषु विवशा प्रेमार्त्तिभारोद्गमात\nप्राणेशं परिचारिकैः खलु कदा दास्या मयाधीश्वरी ॥ २४२ ॥",
+    transliteration: "Mālā-granthana-śikṣayā mṛdu-mṛdu-śrīkhaṇḍa-nirgharṣaṇā-\ndeśenādbhuta-modakādi-vidhibhiḥ kuñjānta-sammārjanaiḥ |\nVṛndāraṇya-rahaḥ-sthalīṣu vivaśā premārtti-bhārodgamāt\nprāṇeśaṃ paricārikaiḥ khalu kadā dāsyā mayādhīśvarī ||",
+    hindi: "प्रेम की पीड़ा के भार से विवश बनी हुई स्वामिनी श्रीराधा माला गूँथने की शिक्षा देकर, धीरे-धीरे चन्दन घिसने का आदेश प्रदान करके, अद्भुत मोदक बनाने की विधि बताकर तथा कुंज प्रदेश के सम्मार्जन द्वारा (बुहारने की आज्ञा देकर) श्रीवृन्दावन की एकान्त स्थलियों में विविध सेवाओं से मुझ दासी द्वारा प्रियतम की कब सेवा करायेंगी?",
+    hinglish: "Prem ki pida ke bhar se vivash bani hui Swamini Shri Radha mala gunthne ki shiksha dekar, dhire-dhire chandan ghisne ka aadesh pradan karke, adbhut modak banane ki vidhi batakar tatha kunj pradesh ke sammarjan dwara (buharne ki aagya dekar) Shri Vrindavan ki ekant sthaliyon mein vividh sevaon se mujh daasi dwara priyatam ki kab seva karayengi?",
+    translation: "When will my Adhishvari (Swamini Radha), who is overwhelmed by the burden of Her painful love, have Her Pranesha (Lord of Her life, Krishna) served by me, Her dasi? (When will She have Him served) in the secluded places of Vrindavan by (Her) teaching me to weave garlands, ordering me to grind soft sandalwood, (showing me) recipes for wondrous modakas, and (having me) sweep the interior of the kunja?"
+  },
+  {
+    id: 243,
+    sanskrit: "प्रेमाम्भोधि रसोल्लसत्तरुणिमारम्भेण गम्भीर हग्\nभेदाभङ्गि मृदुस्मितामृत नव ज्योत्स्रांचितश्रीमुखी ।\nश्रीराधा सुखधामनि प्रविलसद् वृन्दाटवी सीमनि\nप्रेयोंके रतिकौतुकानि कुरुते कन्दर्प लीला निधिः ॥ २४३ ॥",
+    transliteration: "Premāmbhodhi-rasollasat-taruṇimārambheṇa gambhīra-hṛg-\nbhedābhaṅgi-mṛdu-smitāmṛta-nava-jyotsnāñcita-śrīmukhī |\nŚrī-Rādhā sukha-dhāmani pravilasad-Vṛndāṭavī-sīmani\npreyo'ṅke rati-kautukāni kurute kandarpa-līlā-nidhiḥ ||",
+    hindi: "प्रेम-समुद्र के रस से उल्लसित तरुणाई के आरम्भ के कारण गम्भीर कटाक्ष पात से सम्पन्न, विलास-भंगिमाओं से युक्त मन्द मुसकान रूपी अमृतमयी नवीन चाँदनी से व्याप्त श्रीमुख वाली तथा महाप्रेम (काम) कलाओं की निधि श्रीराधा शोभाशाली सुख धाम श्रीवृन्दावन की सीमा में प्रियतम के अंक में कौतुकपूर्ण विहार कर रही हैं。",
+    hinglish: "Prem-samudra ke ras se ullasit tarunai ke aarambh ke karan gambhir kataksh paat se sampann, vilas-bhangimaon se yukt mand muskan rupi amritmayi naveen chandni se vyapt shrimukh wali tatha mahaprem (kaam) kalaon ki nidhi Shri Radha shobhashali sukh dham Shri Vrindavan ki seema mein priyatam ke ank mein kautukpurn vihar kar rahi hain.",
+    translation: "Shri Radha, who is the treasure-house of kandarpa-lila (amorous pastimes), is performing Her playful rati (love) in the lap of Her beloved, within the borders of the shining, blissful abode of Vrindavan. Her glorious face is marked by deep glances and playful gestures born from the dawn of Her youth (which is) blossoming with the rasa of the ocean of love. Her face is also bathed in the fresh moonlight of Her nectarous, gentle smile."
+  },
+  {
+    id: 244,
+    sanskrit: "शुद्ध प्रेमविलास वैभव निधिः कैशोर शोभानिधि-\nर्वैदग्धी मधुराङ्ग भङ्गिम निधिर्लावण्य सम्पन्निधिः ।\nश्रीराधा जयतान्महारसनिधिः कन्दर्प लीला निधिः\nसौन्दर्यैक सुधानिधिर्मधुपतेः सर्वस्वभूतो निधिः ॥ २४४ ॥",
+    transliteration: "Śuddha-premavilāsa-vaibhava-nidhiḥ kaiśora-śobhānidhi-\nr-vaidagdhī-madhurāṅga-bhaṅgima-nidhiḥ-lāvaṇya-sampan-nidhiḥ |\nŚrī-Rādhā jayatān-mahārasa-nidhiḥ kandarpa-līlā-nidhiḥ\nsaundaryaika-sudhānidhir-Madhupateḥ sarvasvabhūto nidhiḥ ||",
+    hindi: "उज्जवल प्रेम विलास के वैभव की निधि, किशोरावस्था की शोभा निधि, (वाणी आदि से प्रकट होने वाली) चातुरी के मधुर अंगों की भंगिमाओं की निधि, रूप लावण्य रूपी सम्पत्ति की निधि, सर्वश्रेष्ठ श्रृंगार रस की निधि, सौन्दर्यामृत की एकमात्र निधि और मधुपति श्रीश्यामसुन्दर की सर्वस्वरूपा निधि श्रीराधा की जय हो。",
+    hinglish: "Ujjwal prem vilas ke vaibhav ki nidhi, kishoravastha ki shobha nidhi, (vani aadi se prakat hone wali) chaturi ke madhur angon ki bhangimaon ki nidhi, roop lavanya rupi sampatti ki nidhi, sarvashreshth shringar ras ki nidhi, saundaryamrit ki ekmatra nidhi aur Madhupati Shri Shyamsundar ki sarvasvarupa nidhi Shri Radha ki jai ho.",
+    translation: "All glories to Shri Radha! She is the treasure (nidhi) of the glory of pure, playful love; the treasure of adolescent splendor; the treasure of sweet, graceful gestures and artistry (vaidagdhi); the treasure of the wealth of beauty (lavanya); the treasure of Maha-rasa; the treasure of amorous lilas (kandarpa-lila); the sole treasure of nectarous beauty; and the ultimate treasure who is the \"all-in-all\" (sarvasva-bhuta) of Madhupati (Krishna)!"
+  },
+  {
+    id: 245,
+    sanskrit: "नीलेन्दीवरवृन्द कान्ति लहरी चौरं किशोर द्वयं\nत्वय्ये तत्कुचयोश्चकास्ति किमिदं रूपेण सम्मोहनम् ।\nतन्मामात्म सखीं कुरु द्वितरुणीयं नौ दृढं श्लिष्यति\nस्वच्छायामभिवीक्ष्य मुह्यति हरौ राधास्मितं पातु नः ॥ २४५ ॥",
+    transliteration: "Nīlendīvara-vṛnda-kānti-laharī-cauraṃ kiśora-dvayaṃ\ntvayye tat-kucayoś-cakāsti kim-idaṃ rūpeṇa sammohanam |\nTan-mām-ātma-sakhīṃ kuru dvi-taruṇīyaṃ nau dṛḍhaṃ śliṣyati\nsvacchāyām-abhivīkṣya muhyati Harau Rādhā-smitaṃ pātu naḥ ||",
+    hindi: "'आपके इन श्रीअंग युगल में नील-कमलों के समूह की कान्ति-तरंग को चुराने वाला तथा अपने रूप से मोहित करने वाला यह कौन किशोर युगल चमक रहा है? इसलिए आप मुझे अपनी सखी बना लीजिए, जिससे ये दोनों किशोर हम दोनों का गाढ़ आलिंगन करें।' इस प्रकार अपनी छाया को (श्रीराधा के श्रीअंग युगल में) देखकर श्रीहरि के मोहित होने पर श्रीराधा की मन्द मुसकान हमारी रक्षा करे。",
+    hinglish: "'Aapke in shri-ang yugal mein neel-kamalon ke samuh ki kanti-tarang ko churane wala tatha apne roop se mohit karne wala yeh kaun kishor yugal chamak raha hai? Isliye aap mujhe apni sakhi bana lijiye, jisse ye donon kishor hum donon ka gaadh aalingan karein.' Is prakar apni chhaya ko (Shri Radha ke shri-ang yugal mein) dekhkar Shri Hari ke mohit hone par Shri Radha ki mand muskan hamari raksha kare.",
+    translation: "(Krishna, seeing His own reflection in Radha's bosom, says:) \"What is this pair of youths shining on Your breasts? Their effulgence steals the beauty of blue lotuses, and their form is enchanting! Therefore, make me your sakhi (female friend), so this pair of tarunis (young maidens, i.e., Krishna's reflected forms) may tightly embrace us both!\"\n\nUpon seeing Hari (Krishna) thus bewildered by His own reflection, Radha smiled. May that smile of Radha protect us."
+  },
+  {
+    id: 246,
+    sanskrit: "सङ्गत्यापि महोत्सवेन मधुराकारां हृदि प्रेयसः\nस्वच्छायामभिवीक्ष्य कौस्तुभमणौ सम्भूतशोका क्रुधा ।\nउत्क्षिप्य प्रियपाणिमेव विनयेत्युक्त्वा गताया बहिः\nसख्यैः सास्रनिवेदनानि किमहं श्रोष्यामि ते राधिके ॥ २४६ ॥",
+    transliteration: "Saṅgatyāpi mahotsavena madhurākārāṃ hṛdi preyasaḥ\nsvacchāyām-abhivīkṣya Kaustubha-maṇau sambhūta-śokā krudhā |\nUtkṣipya priya-pāṇim-eva vinayety-uktvā gatāyā bahiḥ\nsakhyaiḥ sāsra-nivedanāni kim-ahaṃ śroṣyāmi te Rādhike ||",
+    hindi: "हे श्रीराधिके ! (प्रियतम के साथ) सुख भरे मिलन-महोत्सव में सम्मिलित होने पर प्रियतम के हृदय स्थल पर स्थित कौस्तुभमणि में आप अपनी प्रतिबिम्बित मधुर छवि देखकर उत्पन्न हुए क्रोध और शोक के कारण श्रीकृष्ण के हाथ को झटककर 'अरे ढीठ' ऐसा कहकर कुञ्ज के बाहर आयीं। आपके द्वारा इस घटना से आँसू भरे सखियों से किए गए निवेदन को क्या मैं सुनूँगी?",
+    hinglish: "Hey Shri Radhike! (Priyatam ke saath) sukh bhare milan-mahotsav mein sammilit hone par priyatam ke hriday sthal par sthit Kaustubhmani mein aap apni pratibimbit madhur chhavi dekhkar utpann hue krodh aur shok ke karan Shri Krishna ke haath ko jhatakkar 'Are dheeth' aisa kehkar kunj ke bahar aayin. Aapke dwara is ghatna se aansu bhare sakhiyon se kiye gaye nivedan ko kya main sunoongi?",
+    translation: "O Shri Radhe! Even while united with Your beloved in the great festival of joy, upon seeing Your own sweet reflection in the Kaustubha jewel on His chest, You were filled with sorrow and anger (mistaking it for another woman). Throwing off His hand and crying, \"O insolent one (vinaya)!\", You stormed out of the kunja. Will I ever get to hear You tearfully recounting this incident to Your sakhis?"
+  },
+  {
+    id: 247,
+    sanskrit: "महामणि वरस्रजं कुसुम सञ्चयैरञ्चितं\nमहामरकत प्रभा ग्रथित मोहित श्यामलम् ।\nमहारस महीपतेरिव विचित्र सिद्धासनं\nकदानु तव राधिके कबर भारमालोकये ॥ २४७ ॥",
+    transliteration: "Mahāmaṇi-varasrajaṃ kusuma-sañcayair-añcitaṃ\nmahāmarakata-prabhā-grathita-mohita-śyāmalam |\nMahārasa-mahīpater-iva vicitra-siddhāsanaṃ\nkadānu tava Rādhike kabara-bhāram-ālokaye ||",
+    hindi: "हे श्रीराधिके ! अमूल्य एवं श्रेष्ठ मणियों की मालाओं से युक्त कुसुम-समूह से व्याप्त, श्रेष्ठ मरकत मणि के समान कान्ति वाले श्रीश्यामसुन्दर द्वारा गूँथे हुए तथा उनको मोहित करने वाले और रसराज श्रृंगार रूपी महीपति (राजा) के विचित्र सिद्धासन जैसे आपके केशपाश को क्या कभी मैं देखूँगी?",
+    hinglish: "Hey Shri Radhike! Amulya evam shreshth maniyon ki malaon se yukt kusum-samuh se vyapt, shreshth markat mani ke saman kanti wale Shri Shyamsundar dwara gunthe hue tatha unko mohit karne wale aur rasraj shringar rupi mahipati (raja) ke vichitra siddhasan jaise aapke keshpash ko kya kabhi main dekhoongi?",
+    translation: "O Radhike! When will I ever behold the heavy braid of Your hair? It is adorned with garlands of superior gems and clusters of flowers. It was braided by Shyamasundara, whose splendor is like a great sapphire, and it enchants even Him. It is like the wondrous throne (siddhasana) of the great King of Maha-rasa (Shringara)."
+  },
+  {
+    id: 248,
+    sanskrit: "मध्ये मध्ये कुसुमखचितं रत्न दाम्ना निबद्धं\nमल्ली माल्यैर्घन परिमलैर्भूषितं लम्बमानैः ।\nपश्चाद्राजन्मणि वरकृतोदार माणिक्य गुच्छं\nधम्मिल्लं ते हरिकरधृतं कर्हि पश्यामि राधे ॥ २४८ ॥",
+    transliteration: "Madhye madhye kusuma-khacitaṃ ratna-dāmnā nibaddhaṃ\nmallī-mālyair-ghana-parimalair-bhūṣitaṃ lambamānaiḥ |\nPaścād-rājan-maṇi-vara-kṛtodāra-māṇikya-gucchaṃ\ndhammillaṃ te Hari-kara-dhṛtaṃ karhi paśyāmi Rādhe ||",
+    hindi: "हे श्रीराधे ! बीच-बीच में फूलों से व्याप्त रत्न की मालाओं से बंधे हुए, अत्यन्त सुगन्धित लटकती हुई मल्ली-मालाओं से सुशोभित, पीछे की ओर शोभायमान सुन्दर मणि रचित सुखप्रद माणिक्य के गुच्छे से युक्त और श्रीहरि के कर कमल में स्थित आपकी वेणी को मैं कब देखूँगी?",
+    hinglish: "Hey Shri Radhe! Beech-beech mein phoolon se vyapt ratna ki malaon se bandhe hue, atyant sugandhit latakti hui malli-malaon se sushobhit, piche ki aur shobhayaman sundar mani rachit sukhprad manikya ke guchh se yukt aur Shri Hari ke kar kamal mein sthit aapki veni ko main kab dekhoongi?",
+    translation: "O Radhe! When will I see Your braided hair (dhammilla), held in Hari's (Krishna's) hand? It is studded here and there with flowers, bound with strings of gems, adorned with fragrant, hanging jasmine garlands, and decorated from behind with a beautiful cluster of rubies set in superior jewels."
+  },
+  {
+    id: 249,
+    sanskrit: "विचित्राभिर्भङ्गी विततिभिरहो चेतसि परं\nचमत्कारं यच्छन् ललित मणि मुक्तादि ललितम् ।\nरसावेशाद्वित्तं स्मर मधुर वृत्ताखिलमहोद्-\nभुतन्ते सीमन्ते नव कनक पट्टं विजयते ॥ २४९ ॥",
+    transliteration: "Vicitrābhir-bhaṅgī-vitatibhir-aho cetasi paraṃ\ncamatkāraṃ yacchan lalita-maṇi-muktādi-lalitam |\nRasāveśād-vittaṃ smara-madhura-vṛttākhila-mahod-\nbhutan-te sīmante nava-kanaka-paṭṭaṃ vijayate ||",
+    hindi: "अहो, विचित्र लहरियों के विस्तार से चित्त को परम आनन्द प्रदान करता हुआ, सुन्दर मणि-मुक्तादिकों से मनोहर (बना हुआ), रस के आवेश से प्रसिद्ध (श्यामसुन्दर के हृदय में रसावेश उत्पन्न करने के लिए प्रसिद्ध) मनोज के सम्पूर्ण मधुर चरित्रों से युक्त अद्भुत और नवीन कनक पट्ट (सोने का पट्टा) आपकी माँग में सुशोभित हो रहा है。",
+    hinglish: "Aho, vichitra lahariyon ke vistar se chitt ko param anand pradan karta hua, sundar mani-muktadikon se manohar (bana hua), ras ke aavesh se prasiddh (Shyamsundar ke hriday mein rasavesh utpann karne ke liye prasiddh) Manoj ke sampurn madhur charitron se yukt adbhut aur naveen kanak patt (sone ka patta) aapki maang mein sushobhit ho raha hai.",
+    translation: "Ah! A wondrous, new golden fillet (kanaka pattam) shines victoriously in Your hair-parting (simanta)! It brings supreme delight to the heart with its manifold, wondrous ripples (bhangi). It is beautified with lovely gems and pearls. It is renowned for creating rasa-avesha (an ecstasy of rasa), and it contains all the sweet and wondrous pastimes of Smara (Cupid)."
+  },
+  {
+    id: 250,
+    sanskrit: "अहो द्वैधी कर्तुं कृतिभिरनुरागामृत रस\nप्रवाहैः सुस्निग्धैः कुटिल रुचिर श्याम उचितः ।\nइतीयं सीमन्ते नव रुचिर सिन्दूर रचिता\nसुरेखा नः प्रख्यापयितुमिव राधे विजयते ॥ २५० ॥",
+    transliteration: "Aho dvaidhī-kartuṃ kṛtibhir-anurāgāmṛta-rasa-\npravāhaiḥ su-snigdhaiḥ kuṭila-rucira-śyāma ucitaḥ |\nItīyaṃ sīmante nava-rucira-sindūra-racitā\nsurekhā naḥ prakhyāpayitum-iva Rādhe vijayate ||",
+    hindi: "अहो श्रीराधे ! चतुर पुरुषों को अति स्निग्ध अनुरागामृत रस के प्रवाह द्वारा कुटिल और सुन्दर श्याम को (श्याम वर्ण के केश तथा श्यामसुन्दर को) दो भागों में विभक्त करना ही उचित है। मानों हमको यही बात समझाने के लिए माँग में नूतन मनोहर सिन्दूर से बनाई गई यह सुन्दर रेखा सुशोभित हो रही है。\n\n(नोट: 'दो भागों में विभक्त कर देने' का अर्थ श्रीश्यामसुन्दर के पक्ष को द्विविधा में डाल देना। श्रीराधा की सिन्दूर-मण्डित माँग को देखकर श्रीश्यामसुन्दर का मन द्विविधा में पड़ जाता है अर्थात् चक्कर में पड़ जाता है)।",
+    hinglish: "Aho Shri Radhe! Chatur purushon ko ati snigdh anuragamrit ras ke pravah dwara kutil aur sundar Shyam ko (shyam varn ke kesh tatha Shyamsundar ko) do bhagon mein vibhakt karna hi uchit hai. Manon humko yahi baat samjhane ke liye maang mein nutan manohar sindoor se banayi gayi yeh sundar rekha sushobhit ho rahi hai.\n\n(Note: 'Do bhagon mein vibhakt kar dene' ka arth Shri Shyamsundar ke paksh ko dvidha mein daal dena. Shri Radha ki sindoor-mandit maang ko dekhkar Shri Shyamsundar ka mann dvidha mein pad jaata hai arthat chakkar mein pad jaata hai).",
+    translation: "O Radhe! Ah! It is only proper for skillful persons to divide the \"dark and lovely\" (Shyama—meaning both Your dark hair and Shyama-sundara) into two, using the flowing streams of Your exceedingly smooth, nectarous love (anuraga). It seems this beautiful line (surekha), drawn in Your hair-parting with fresh, lovely sindura, shines victoriously as if to proclaim this very fact to us.\n\n(Note: To \"divide into two\" in Shyama-sundara's case means to put Him into a dilemma. Seeing the sindura in Radha's parting, Shyama-sundara's mind is thrown into confusion.)"
   }
 ];
