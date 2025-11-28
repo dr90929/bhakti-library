@@ -800,4 +800,3 @@ export const verses = [
     translation: "O Radhe! You with the glossy, curly, dark hair; You whose lips are like the ripe bimba fruit; You with the moon-like face! You whose eyes defeat the playful khanjana bird; You who wear a lustrous pearl on the tip of Your nose! You with the full hips and slender waist; You whose rounded bosom is astonishingly beautiful! You whose creeper-like arms are adorned with lovely bracelets! Please reveal Your true form to me!"
   }
 ];
-];
