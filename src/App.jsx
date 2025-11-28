@@ -2,14 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff } from 'lucide-react';
 
 // --- DATA SOURCE ---
-// I have populated the first 10 verses from your DOCX file.
-// You can add the remaining verses following this exact pattern.
-
 const libraryData = [
   {
     id: 'rsn',
     title: "Shri Radha Sudha Nidhi",
-    author: "Srila Hita Harivamsa Mahaprabhu",
+    author: "Shri Hit Harivansh Mahaprabhu",
     description: "The nectar of devotion to Srimati Radharani (270 Verses).",
     verses: [
       {
@@ -18,7 +15,7 @@ const libraryData = [
         transliteration: "Yasyāḥ kadāpi vasanāñcala-khelanottha-\ndhanyātidhanya-pavanena kṛtārthamānī |\nYogīndra-durgama-gatir-Madhusūdano'pi\ntasyā namo'stu Vṛṣabhānu-bhuvo diśe'pi ||1||",
         hindi: "जिनके नीलाञ्चल के किसी समय हिलने से उठे हुये धन्यातिधन्य पवन के स्पर्श से, योगीन्द्रों के लिये अति दुर्गम गति वाले मधुसूदन भी अपने आपको कृतकृत्य मानते हैं, मैं उन श्रीवृषभानुनन्दिनी जी की दिशा को भी नमस्कार करता हूँ।",
         hinglish: "Jinke neelanchal ke kisi samay hilne se uthe huye dhanyatidhanya pavan ke sparsh se, yogindron ke liye ati durgam gati wale Madhusudan bhi apne aapko kritakritya maante hain, main un Shri Vrishabhanunandini ji ki disha ko bhi namaskar karta hoon.",
-        translation: "Even Madhusudana (Lord Krishna), whose ways are incomprehensible even to the greatest of yogis (Yogindras), considers Himself utterly fulfilled by the touch of the most blessed breeze stirred by the playful movement of Her garment's edge. I offer my salutations even to the direction of that Vrishabhanu-nandini (Shri Radha)."
+        translation: "Even Madhusudana (Lord Krishna), whose ways are incomprehensible even to the greatest of yogis, considers Himself utterly fulfilled by the touch of the most blessed breeze stirred by the playful movement of Her garment's edge. I offer my salutations even to the direction of that Vrishabhanu-nandini (Shri Radha)."
       },
       {
         id: 2,
@@ -42,7 +39,7 @@ const libraryData = [
         transliteration: "Ādhāya mūrdhni yadāpurudāra-gopyaḥ\nkāmyaṃ padaṃ priya-guṇairapi piccha-mauleḥ |\nBhāvotsavena bhajatāṃ rasa-kāmadhenuṃ\ntaṃ Rādhikā-caraṇa-reṇumahaṃ smarāmi ||4||",
         hindi: "उदार गोपियों ने जिस चरण-धूलि को मस्तक पर चढ़ाकर मोर-मुकुट धारी श्री श्यामसुन्दर के लिये भी कामना करने योग्य पद (श्री प्रियाजू के दास्यभाव की पदवी) को प्रिय गुणों के साथ प्राप्त किया, भाव चाव से भजने वालों के लिये रस की कामधेनु के समान उन श्रीराधा के चरणों की धूलि का मैं स्मरण करता हूँ।",
         hinglish: "Udar gopiyon ne jis charan-dhuli ko mastak par chadhakar mor-mukut dhari Shri Shyamsundar ke liye bhi kamana karne yogya pad (Shri Priyaju ke daasyabhav ki padvi) ko priya gunon ke saath prapt kiya, bhaav chaav se bhajne walon ke liye ras ki Kamadhenu ke saman un Shri Radha ke charanon ki dhuli ka main smaran karta hoon.",
-        translation: "I remember the dust of Shri Radha's feet. By placing this dust on their heads, the magnanimous Gopis attained a position (the status of Her service/dasya) endowed with dear qualities, a position desirable even to the wearer of the peacock crown (Lord Krishna) Himself. For those who worship with overflowing emotion, this foot-dust is like a wish-fulfilling cow (Kamadhenu) of rasa."
+        translation: "I remember the dust of Shri Radha's feet. By placing this dust on their heads, the magnanimous Gopis attained a position (the status of Her service) endowed with dear qualities, a position desirable even to the wearer of the peacock crown (Lord Krishna) Himself. For those who worship with overflowing emotion, this foot-dust is like a wish-fulfilling cow (Kamadhenu) of rasa."
       },
       {
         id: 5,
@@ -50,7 +47,7 @@ const libraryData = [
         transliteration: "Divya-pramoda-rasa-sāra-nijāṅga-saṅga-\npīyūṣa-vīci-nicayairabhiṣecayantī |\nKandarpa-koṭi-śara-mūrcchita-Nandasūnu-\nsañjīvinī jayati kāpi Nikuñja-devī ||5||",
         hindi: "अलौकिक आनन्द स्वरूप रस के सारभूत अपने श्रीअंगों के संग-रूपी अमृत तरंगों के समूह से सींचकर, कोटि-कोटि मनोज (कामदेव) के बाणों से व्यथित नन्दकुमार को संजीवित करने वाली कोई अनिर्वचनीय निकुंजदेवी की जय हो।",
         hinglish: "Alaukik anand swaroop ras ke saarbhut apne shri-angon ke sang-rupi amrit tarangon ke samuh se sinchkar, koti-koti Manoj (Kaamdev) ke baanon se vyathit Nandkumar ko sanjivit karne wali koi anirvachaniya Nikunjadevi ki jai ho.",
-        translation: "All glories to that indescribable Goddess of the Nikunja (Shri Radha)! She is the life-restoring herb (Sanjivani) for the son of Nanda (Lord Krishna), who faints, pierced by the arrows of millions of Cupids. She revives Him by anointing Him with waves of nectar flowing from the touch of Her divine limbs, which are the very essence of divine bliss and love-rasa."
+        translation: "All glories to that indescribable Goddess of the Nikunja! She is the life-restoring herb (Sanjivani) for the son of Nanda (Lord Krishna), who faints, pierced by the arrows of millions of Cupids. She revives Him by anointing Him with waves of nectar flowing from the touch of Her divine limbs, which are the very essence of divine bliss and love-rasa."
       },
       {
         id: 6,
@@ -66,7 +63,7 @@ const libraryData = [
         transliteration: "Yat-kiṅkarīṣu bahuśaḥ khalu kāku-vāṇī\nnityaṃ parasya puruṣasya śikhaṇḍa-mauleḥ |\nTasyāḥ kadā rasa-nidhervṛṣabhānujāyās\ntat-keli-kuñja-bhavanāṅgaṇa-mārjanī syām ||7||",
         hindi: "मोरमुकुटधारी परम पुरुष श्रीश्यामसुन्दर जिनकी दासियों से नित्य अनेक बार दीनतापूर्ण वचन (श्री प्रियाजू की कृपा प्राप्ति के लिए) कहते रहते हैं, उन रसनिधि श्रीवृषभानुनन्दिनी के केलिकुंज-भवन के आँगन की सोहनी (झाड़ू) लगाने वाली (मैं) कब होऊँगी?",
         hinglish: "Mormukutdhari param purush Shri Shyamsundar jinki dasiyon se nitya anek baar dintapurn vachan (Shri Priyaju ki kripa prapti ke liye) kehte rehte hain, un rasnidhi Shri Vrishabhanunandini ke keli-kunj-bhavan ke aangan ki sohni (jhadoo) lagane wali (main) kab houngi?",
-        translation: "When will I become the broom for sweeping the courtyard of the play-bower (keli-kunja) of that ocean of rasa, Vrishabhanu's daughter (Shri Radha)? To whose maidservants (kinkaris) the Supreme Person, the wearer of the peacock crown (Lord Krishna), constantly speaks countless words of humble entreaty (to gain Her favor)."
+        translation: "When will I become the broom for sweeping the courtyard of the play-bower (keli-kunja) of that ocean of rasa, Vrishabhanu's daughter? To whose maidservants (kinkaris) the Supreme Person, the wearer of the peacock crown, constantly speaks countless words of humble entreaty (to gain Her favor)."
       },
       {
         id: 8,
@@ -90,7 +87,7 @@ const libraryData = [
         transliteration: "Yat-pāda-padma-nakha-candra-maṇi-cchaṭāyāḥ\nvisphūrjitaṃ kimapi gopa-vadhūṣvadarśi |\nPūrṇānurāga-rasa-sāgara-sāra-mūrtiḥ\nsā Rādhikā mayi kadāpi kṛpāṃ karotu ||10||",
         hindi: "जिनके चरण कमल के नखरूपी चन्द्रमणि की छटा का कुछ अनिर्वचनीय विलास गोपियों में देखा गया है, वे पूर्ण अनुराग रस के सागर की सार स्वरूप मूर्ति श्रीराधिका मुझ पर भी कभी कृपा करें।",
         hinglish: "Jinke charan kamal ke nakharupi chandramani ki chhata ka kuch anirvachaniya vilas gopiyon mein dekha gaya hai, ve purn anuraag ras ke sagar ki saar swaroop murti Shri Radhika mujh par bhi kabhi kripa karein.",
-        translation: "May that Shri Radhika—who is the very embodiment of the essence of the ocean of complete love-rasa—bestow Her mercy upon me someday. An indescribable glimpse of the splendor from the effulgence of Her moon-like toenails (nails like moon-jewels) is seen (reflected) in the Gopis."
+        translation: "May that Shri Radhika—who is the very embodiment of the essence of the ocean of complete love-rasa—bestow Her mercy upon me someday. An indescribable glimpse of the splendor from the effulgence of Her moon-like toenails is seen (reflected) in the Gopis."
       }
       // Copy and paste the remaining 260 verses here following the exact pattern above.
     ]
@@ -205,6 +202,16 @@ const VerseCard = ({ verse, settings, isDarkMode }) => (
   </div>
 );
 
+const Footer = ({ isDarkMode }) => (
+  <footer className={`py-12 mt-12 transition-colors duration-300 border-t ${isDarkMode ? 'bg-slate-900 text-slate-400 border-slate-800' : 'bg-amber-800 text-amber-100 border-amber-900'}`}>
+    <div className="max-w-4xl mx-auto px-4 text-center">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm font-medium opacity-80">
+        <span>© 2025 Bhakti Library</span>
+      </div>
+    </div>
+  </footer>
+);
+
 const LibraryView = ({ onSelectBook, isDarkMode }) => (
   <div className="max-w-4xl mx-auto px-4 py-12">
     <div className="text-center mb-12 space-y-4">
@@ -236,48 +243,59 @@ export default function App() {
 
   useEffect(() => { setCurrentPage(1); setSearchTerm(''); }, [currentBook]);
 
-  if (!currentBook) {
-    return (
-      <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
-        <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
-        <LibraryView onSelectBook={setCurrentBook} isDarkMode={isDarkMode} />
-      </div>
+  // Main Render Logic
+  const renderContent = () => {
+    if (!currentBook) {
+      return (
+        <>
+          <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
+          <LibraryView onSelectBook={setCurrentBook} isDarkMode={isDarkMode} />
+          <Footer isDarkMode={isDarkMode} />
+        </>
+      );
+    }
+
+    const filteredVerses = currentBook.verses.filter(verse => 
+      verse.sanskrit.includes(searchTerm) || 
+      (verse.translation && verse.translation.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (verse.hindi && verse.hindi.includes(searchTerm)) ||
+      verse.id.toString() === searchTerm
     );
-  }
 
-  const filteredVerses = currentBook.verses.filter(verse => 
-    verse.sanskrit.includes(searchTerm) || 
-    (verse.translation && verse.translation.toLowerCase().includes(searchTerm.toLowerCase())) ||
-    (verse.hindi && verse.hindi.includes(searchTerm)) ||
-    verse.id.toString() === searchTerm
-  );
+    const indexOfLastVerse = currentPage * versesPerPage;
+    const currentVerses = filteredVerses.slice(indexOfLastVerse - versesPerPage, indexOfLastVerse);
+    const totalPages = Math.ceil(filteredVerses.length / versesPerPage);
 
-  const indexOfLastVerse = currentPage * versesPerPage;
-  const currentVerses = filteredVerses.slice(indexOfLastVerse - versesPerPage, indexOfLastVerse);
-  const totalPages = Math.ceil(filteredVerses.length / versesPerPage);
+    return (
+      <>
+        <Header title={currentBook.title} isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={true} onBack={() => setCurrentBook(null)} />
+        <main className="max-w-3xl mx-auto px-4 pt-8 pb-16 min-h-[60vh]">
+          <ViewSettings settings={settings} toggleSetting={(key) => setSettings({...settings, [key]: !settings[key]})} isDarkMode={isDarkMode} />
+          <div className="sticky top-20 z-40 mb-10">
+            <div className="relative max-w-xl mx-auto shadow-lg rounded-full">
+               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><Search className="h-5 w-5 text-gray-400" /></div>
+               <input type="text" placeholder="Search verses..." className={`block w-full pl-11 pr-4 py-4 rounded-full border-2 focus:outline-none ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            </div>
+          </div>
+          <div className="space-y-8">
+              {currentVerses.map(verse => <VerseCard key={verse.id} verse={verse} settings={settings} isDarkMode={isDarkMode} />)}
+          </div>
+          {filteredVerses.length > versesPerPage && (
+              <div className="mt-12 flex justify-center space-x-4">
+                  <button onClick={() => setCurrentPage(c => Math.max(1, c-1))} disabled={currentPage===1} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronLeft/></button>
+                  <span className="py-2">Page {currentPage} of {totalPages}</span>
+                  <button onClick={() => setCurrentPage(c => Math.min(totalPages, c+1))} disabled={currentPage===totalPages} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronRight/></button>
+              </div>
+          )}
+        </main>
+        <Footer isDarkMode={isDarkMode} />
+      </>
+    );
+  };
 
   return (
     <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
-      <Header title={currentBook.title} isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={true} onBack={() => setCurrentBook(null)} />
-      <main className="max-w-3xl mx-auto px-4 pt-8 pb-16">
-        <ViewSettings settings={settings} toggleSetting={(key) => setSettings({...settings, [key]: !settings[key]})} isDarkMode={isDarkMode} />
-        <div className="sticky top-20 z-40 mb-10">
-          <div className="relative max-w-xl mx-auto shadow-lg rounded-full">
-             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><Search className="h-5 w-5 text-gray-400" /></div>
-             <input type="text" placeholder="Search verses..." className={`block w-full pl-11 pr-4 py-4 rounded-full border-2 focus:outline-none ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-amber-100'}`} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-          </div>
-        </div>
-        <div className="space-y-8">
-            {currentVerses.map(verse => <VerseCard key={verse.id} verse={verse} settings={settings} isDarkMode={isDarkMode} />)}
-        </div>
-        {filteredVerses.length > versesPerPage && (
-            <div className="mt-12 flex justify-center space-x-4">
-                <button onClick={() => setCurrentPage(c => Math.max(1, c-1))} disabled={currentPage===1} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronLeft/></button>
-                <span className="py-2">Page {currentPage} of {totalPages}</span>
-                <button onClick={() => setCurrentPage(c => Math.min(totalPages, c+1))} disabled={currentPage===totalPages} className={`p-2 border rounded-full ${isDarkMode ? 'border-slate-700' : 'border-amber-200'}`}><ChevronRight/></button>
-            </div>
-        )}
-      </main>
+      {renderContent()}
     </div>
   );
 }
