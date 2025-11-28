@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff, Grid3X3, Minus, Plus } from 'lucide-react';
 
+// --- IMPORTS ---
+// 1. We import the verses from your separate file here at the top.
+// Make sure your verses.js file has "export const verses = [...]"
+import { verses } from './verses'; 
+
 // --- DATA SOURCE ---
 const libraryData = [
   {
@@ -8,18 +13,8 @@ const libraryData = [
     title: "Shri Radha Sudha Nidhi",
     author: "Shri Hit Harivansh Mahaprabhu",
     description: "The nectar of devotion to Srimati Radharani (270 Verses).",
-    // FIXED: Removed the invalid import statement and added the verses array structure directly
-    verses: [
-      {
-        id: 1,
-        sanskrit: "यस्याः कदापि वसनाञ्चल-खेलनोत्थ-\nधन्यातिधन्य-पवनेन कृतार्थ-मानी ।\nयोगीन्द्र-दुर्गम-गतिर् मधुसूदनोऽपि\nतस्या नमोऽस्तु वृषभानु-भुवो दिशेऽपि ॥१॥",
-        transliteration: "yasyāḥ kadāpi vasanāñcala-khelanottha-\ndhanyātidhanya-pavanena kṛtārtha-mānī |",
-        hindi: "जिनके वस्त्र के अञ्चल के हिलने से उत्पन्न धन्यातिधन्य वायु का स्पर्श पाकर, योगिराजों के लिये भी अगम्य-गति वाले श्री मधुसूदन भी अपने को कृतार्थ मानते हैं, उन श्री वृषभानु-नन्दिनी की (निवास) दिशा को भी नमस्कार हो।",
-        hinglish: "Jinke vastra ke anchal ke hilne se...",
-        translation: "I bow even to the direction of Sri Vrishabhanu-nandini (Srimati Radharani), considering Himself successful by the touch of the most glorious wind raised by the movement of Her garment's hem, even Madhusudana, whose ways are difficult for the best of yogis to understand, feels gratified."
-      },
-      // Add more verses here or import them at the top of the file and reference them here
-    ]
+    // 2. We assign the imported variable here
+    verses: verses 
   },
   {
     id: 'svm',
