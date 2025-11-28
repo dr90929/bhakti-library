@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon, Sun, Settings, ArrowLeft, Library, Eye, EyeOff, Grid3X3, Minus, Plus } from 'lucide-react';
 
 // --- IMPORTS ---
-// 1. We import the verses from your separate file here at the top.
-// Make sure your verses.js file has "export const verses = [...]"
+// Import the verses from your separate file here.
 import { verses } from './verses'; 
 
 // --- DATA SOURCE ---
@@ -13,7 +12,6 @@ const libraryData = [
     title: "Shri Radha Sudha Nidhi",
     author: "Shri Hit Harivansh Mahaprabhu",
     description: "The nectar of devotion to Srimati Radharani (270 Verses).",
-    // 2. We assign the imported variable here
     verses: verses 
   },
   {
@@ -151,9 +149,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => (
          {settings.hindi && verse.hindi && (
            <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
              <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
+             {/* Added whitespace-pre-wrap to preserve newlines for Notes */}
              <p 
                style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
              >
                {verse.hindi}
              </p>
@@ -162,9 +161,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => (
          {settings.hinglish && verse.hinglish && (
            <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
              <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
+             {/* Added whitespace-pre-wrap */}
              <p 
                style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`italic ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}
+               className={`italic whitespace-pre-wrap ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}
              >
                {verse.hinglish}
              </p>
@@ -173,9 +173,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => (
          {settings.english && verse.translation && (
            <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
              <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
+             {/* Added whitespace-pre-wrap */}
              <p 
                style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
-               className={`${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
              >
                {verse.translation}
              </p>
