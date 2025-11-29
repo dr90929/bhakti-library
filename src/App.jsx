@@ -5,10 +5,9 @@ import { Search, BookOpen, ChevronLeft, ChevronRight, Heart, Menu, X, Info, Moon
 import { verses } from './verses'; 
 
 // --- DATA SOURCE ---
-// Note: IDs should be URL-friendly (e.g., 'rsn', 'gita')
 const libraryData = [
   {
-    id: 'rsn', 
+    id: 'rsn',
     title: "Shri Radha Sudha Nidhi",
     author: "Shri Hit Harivansh Mahaprabhu",
     description: "The nectar of devotion to Srimati Radharani (270 Verses).",
@@ -78,6 +77,7 @@ const ViewSettings = ({ settings, toggleSetting, fontSize, setFontSize, isDarkMo
         <span className={`text-xs font-bold uppercase tracking-wider ${isDarkMode ? 'text-slate-400' : 'text-amber-800'}`}>Options</span>
       </div>
       
+      {/* Font Size Controls */}
       <div className="flex items-center space-x-2">
         <button 
           onClick={() => setFontSize(s => Math.max(14, s - 2))}
@@ -115,31 +115,36 @@ const ViewSettings = ({ settings, toggleSetting, fontSize, setFontSize, isDarkMo
   </div>
 );
 
-const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
+const VerseCard = ({ verse, currentBookId, settings, fontSize, isDarkMode }) => {
   
   const handleShare = async () => {
-    // Uses current hash URL (e.g., #/rsn/5)
-    const shareUrl = window.location.href;
+    // URL create karte hain
+    const baseUrl = window.location.origin + window.location.pathname;
+    const hashLink = `/${currentBookId}/${verse.id}`;
+    const fullUrl = `${baseUrl}#${hashLink}`;
     
+    // Sirf text field mein URL daalenge, alag se 'url' parameter nahi bhejenge
+    // Isse duplication ki samasya hal ho jayegi
     const shareText = `*Shri Radha Sudha Nidhi - Verse ${verse.id}*\n\n` +
       `${verse.sanskrit}\n\n` +
       `*Hindi:*\n${verse.hindi ? verse.hindi.substring(0, 100) + '...' : ''}\n\n` +
-      `Read more: ${shareUrl}`;
+      `Read more: ${fullUrl}`;
 
     if (navigator.share) {
       try {
         await navigator.share({
           title: `Verse ${verse.id}`,
           text: shareText,
-          url: shareUrl,
+          // url: fullUrl, // Humne yahan URL hata diya hai taaki double na ho
         });
       } catch (error) {
         console.log('Error sharing:', error);
       }
     } else {
+      // Fallback
       try {
         await navigator.clipboard.writeText(shareText);
-        alert('Link copied to clipboard!');
+        alert('Verse link copied to clipboard!');
       } catch (err) {
         console.error('Failed to copy:', err);
       }
@@ -155,7 +160,7 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
           <button 
             onClick={handleShare}
             className={`transition-colors ${isDarkMode ? 'text-slate-400 hover:text-amber-300' : 'text-amber-400 hover:text-amber-600'}`}
-            title="Share Verse"
+            title="Share Verse Link"
           >
             <Share2 className="h-5 w-5" />
           </button>
@@ -164,6 +169,8 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
       </div>
       
       <div className="p-6 md:p-10 space-y-8">
+        
+        {/* Sanskrit Verse - Dynamic Font Size */}
         <div className="text-center">
           <p 
             style={{ fontSize: `${fontSize + 4}px`, lineHeight: '1.6' }} 
@@ -188,7 +195,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
            {settings.hindi && verse.hindi && (
              <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-orange-500' : 'border-orange-300'}`}>
                <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-orange-400' : 'text-orange-600'}`}>Hindi</h4>
-               <p style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }} className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}>
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               >
                  {verse.hindi}
                </p>
              </div>
@@ -196,7 +206,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
            {settings.hinglish && verse.hinglish && (
              <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-purple-500' : 'border-purple-300'}`}>
                <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}>Hinglish</h4>
-               <p style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }} className={`italic whitespace-pre-wrap ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}>
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`italic whitespace-pre-wrap ${isDarkMode ? 'text-slate-400' : 'text-gray-600'}`}
+               >
                  {verse.hinglish}
                </p>
              </div>
@@ -204,7 +217,10 @@ const VerseCard = ({ verse, settings, fontSize, isDarkMode }) => {
            {settings.english && verse.translation && (
              <div className={`border-l-4 pl-5 ${isDarkMode ? 'border-blue-500' : 'border-blue-300'}`}>
                <h4 className={`text-xs uppercase font-bold mb-2 tracking-widest ${isDarkMode ? 'text-blue-400' : 'text-blue-600'}`}>English</h4>
-               <p style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }} className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}>
+               <p 
+                 style={{ fontSize: `${fontSize}px`, lineHeight: '1.8' }}
+                 className={`whitespace-pre-wrap ${isDarkMode ? 'text-slate-300' : 'text-gray-700'}`}
+               >
                  {verse.translation}
                </p>
              </div>
@@ -278,15 +294,13 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showIndex, setShowIndex] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [fontSize, setFontSize] = useState(18); 
+  const [fontSize, setFontSize] = useState(18); // Default font size
   const [settings, setSettings] = useState({ transliteration: true, hindi: true, hinglish: false, english: true });
 
-  // --- HASH ROUTING LOGIC ---
-
-  // 1. Handle Initial Load & Hash Changes
+  // URL PARAMETER LOGIC TO LOAD VERSE DIRECTLY
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash; // e.g., #/rsn/5 or #/gita/2/17
+      const hash = window.location.hash; // e.g., #/rsn/5
       
       if (!hash || hash === '#/') {
         setCurrentBook(null);
@@ -294,16 +308,12 @@ export default function App() {
       }
 
       const parts = hash.replace(/^#\/?/, '').split('/');
-      // parts[0] = bookId, parts[1] = verseId (or chapterId)
+      // parts[0] = bookId, parts[1] = verseId
       
       if (parts.length < 2) return;
 
       const bookId = parts[0];
-      
-      // Future proofing logic:
-      // If we have 3 parts (e.g., gita/2/17), handle differently
-      // For now, assuming 2 parts (bookId/verseId)
-      const verseId = parts[parts.length - 1]; // Always take the last part as verse ID for now
+      const verseId = parts[parts.length - 1];
 
       const foundBook = libraryData.find(b => b.id === bookId);
       
@@ -323,9 +333,23 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // 2. Navigation Functions (Update URL instead of state directly)
+  // UPDATE URL WHEN VERSE CHANGES
+  useEffect(() => {
+    if (currentBook) {
+      const currentVerseId = currentBook.verses[currentIndex].id;
+      const newHash = `#/${currentBook.id}/${currentVerseId}`;
+      
+      if (window.location.hash !== newHash) {
+         window.history.pushState(null, null, newHash);
+      }
+    } else {
+      if (window.location.hash && window.location.hash !== '#/') {
+        window.history.pushState(null, null, ' ');
+      }
+    }
+  }, [currentBook, currentIndex]);
+
   const navigateToBook = (book) => {
-    // Default to first verse
     window.location.hash = `/${book.id}/${book.verses[0].id}`;
   };
 
@@ -375,6 +399,9 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentIndex]);
 
+  const handleBookSelect = (book) => {
+    navigateToBook(book);
+  };
 
   const handleSearch = (e) => {
     const term = e.target.value;
@@ -389,16 +416,20 @@ export default function App() {
     );
 
     if (matchIndex !== -1) {
-      // For search, we simply scroll/jump to that verse via URL
       navigateToVerseIndex(matchIndex);
     }
+  };
+
+  const handleIndexSelect = (index) => {
+    navigateToVerseIndex(index);
+    setShowIndex(false);
   };
 
   if (!currentBook) {
     return (
       <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
         <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
-        <LibraryView onSelectBook={navigateToBook} isDarkMode={isDarkMode} />
+        <LibraryView onSelectBook={handleBookSelect} isDarkMode={isDarkMode} />
         <Footer isDarkMode={isDarkMode} />
       </div>
     );
@@ -430,10 +461,7 @@ export default function App() {
         isOpen={showIndex} 
         onClose={() => setShowIndex(false)} 
         verses={currentBook.verses} 
-        onSelect={(idx) => {
-            navigateToVerseIndex(idx);
-            setShowIndex(false);
-        }}
+        onSelect={handleIndexSelect} 
         isDarkMode={isDarkMode} 
       />
 
@@ -462,7 +490,13 @@ export default function App() {
 
         {/* Active Verse Card */}
         <div className="flex-grow flex items-center">
-          <VerseCard verse={currentVerse} settings={settings} fontSize={fontSize} isDarkMode={isDarkMode} />
+          <VerseCard 
+            verse={currentVerse} 
+            currentBookId={currentBook.id}
+            settings={settings} 
+            fontSize={fontSize} 
+            isDarkMode={isDarkMode} 
+          />
         </div>
 
         {/* Navigation Controls */}
