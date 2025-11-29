@@ -77,7 +77,6 @@ const ViewSettings = ({ settings, toggleSetting, fontSize, setFontSize, isDarkMo
         <span className={`text-xs font-bold uppercase tracking-wider ${isDarkMode ? 'text-slate-400' : 'text-amber-800'}`}>Options</span>
       </div>
       
-      {/* Font Size Controls */}
       <div className="flex items-center space-x-2">
         <button 
           onClick={() => setFontSize(s => Math.max(14, s - 2))}
@@ -118,30 +117,36 @@ const ViewSettings = ({ settings, toggleSetting, fontSize, setFontSize, isDarkMo
 const VerseCard = ({ verse, currentBookId, settings, fontSize, isDarkMode }) => {
   
   const handleShare = async () => {
-    // URL create karte hain
+    // 1. URL create karte hain (HASH format mein)
     const baseUrl = window.location.origin + window.location.pathname;
+    // Ensure no double slashes if pathname ends with /
+    const cleanBaseUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
     const hashLink = `/${currentBookId}/${verse.id}`;
-    const fullUrl = `${baseUrl}#${hashLink}`;
+    const fullUrl = `${cleanBaseUrl}/#${hashLink}`;
     
-    // Sirf text field mein URL daalenge, alag se 'url' parameter nahi bhejenge
-    // Isse duplication ki samasya hal ho jayegi
+    // 2. Message Text Build karte hain
+    // Hindi text ko trim kar rahe hain taaki message bahut lamba na ho
+    const shortHindi = verse.hindi ? verse.hindi.substring(0, 150) + (verse.hindi.length > 150 ? '...' : '') : '';
+
     const shareText = `*Shri Radha Sudha Nidhi - Verse ${verse.id}*\n\n` +
       `${verse.sanskrit}\n\n` +
-      `*Hindi:*\n${verse.hindi ? verse.hindi.substring(0, 100) + '...' : ''}\n\n` +
-      `Read more: ${fullUrl}`;
+      `*Hindi:*\n${shortHindi}\n\n` +
+      `Read full verse here:\n${fullUrl}`;
 
+    // 3. Share Logic
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `Verse ${verse.id}`,
+          title: `Verse ${verse.id} | Bhakti Library`,
           text: shareText,
-          // url: fullUrl, // Humne yahan URL hata diya hai taaki double na ho
+          // FIX: 'url' parameter hata diya hai taaki link double na ho.
+          // Link ab 'text' ke andar hi hai.
         });
       } catch (error) {
         console.log('Error sharing:', error);
       }
     } else {
-      // Fallback
+      // Fallback for desktop
       try {
         await navigator.clipboard.writeText(shareText);
         alert('Verse link copied to clipboard!');
@@ -170,7 +175,7 @@ const VerseCard = ({ verse, currentBookId, settings, fontSize, isDarkMode }) => 
       
       <div className="p-6 md:p-10 space-y-8">
         
-        {/* Sanskrit Verse - Dynamic Font Size */}
+        {/* Sanskrit Verse */}
         <div className="text-center">
           <p 
             style={{ fontSize: `${fontSize + 4}px`, lineHeight: '1.6' }} 
@@ -294,21 +299,24 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showIndex, setShowIndex] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [fontSize, setFontSize] = useState(18); // Default font size
+  const [fontSize, setFontSize] = useState(18); 
   const [settings, setSettings] = useState({ transliteration: true, hindi: true, hinglish: false, english: true });
 
-  // URL PARAMETER LOGIC TO LOAD VERSE DIRECTLY
+  // --- HASH ROUTING LOGIC ---
+
+  // 1. Initial Load & Hash Change Listener
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash; // e.g., #/rsn/5
       
       if (!hash || hash === '#/') {
         setCurrentBook(null);
+        document.title = "Bhakti Library - Sacred Texts";
         return;
       }
 
+      // Parse hash: #/bookId/verseId
       const parts = hash.replace(/^#\/?/, '').split('/');
-      // parts[0] = bookId, parts[1] = verseId
       
       if (parts.length < 2) return;
 
@@ -323,32 +331,40 @@ export default function App() {
         if (vIndex !== -1) {
           setCurrentBook(foundBook);
           setCurrentIndex(vIndex);
+          // Update title immediately
+          document.title = `Verse ${verseId} | ${foundBook.title}`;
         }
       }
     };
 
     window.addEventListener('hashchange', handleHashChange);
-    handleHashChange(); // Run on mount
+    handleHashChange(); // Check on mount
 
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // UPDATE URL WHEN VERSE CHANGES
+  // 2. Update Hash when state changes
   useEffect(() => {
     if (currentBook) {
       const currentVerseId = currentBook.verses[currentIndex].id;
       const newHash = `#/${currentBook.id}/${currentVerseId}`;
       
       if (window.location.hash !== newHash) {
+         // Use replaceState to update URL without triggering a hashchange event loop if possible,
+         // but strictly speaking assigning window.location.hash is standard.
+         // history.pushState is better to avoid cluttering history if user slides quickly
          window.history.pushState(null, null, newHash);
+         document.title = `Verse ${currentVerseId} | ${currentBook.title}`;
       }
     } else {
       if (window.location.hash && window.location.hash !== '#/') {
         window.history.pushState(null, null, ' ');
+        document.title = "Bhakti Library - Sacred Texts";
       }
     }
   }, [currentBook, currentIndex]);
 
+  // Navigation Helpers
   const navigateToBook = (book) => {
     window.location.hash = `/${book.id}/${book.verses[0].id}`;
   };
@@ -399,10 +415,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentIndex]);
 
-  const handleBookSelect = (book) => {
-    navigateToBook(book);
-  };
-
   const handleSearch = (e) => {
     const term = e.target.value;
     setSearchTerm(term);
@@ -429,7 +441,7 @@ export default function App() {
     return (
       <div className={`min-h-screen transition-colors duration-300 font-sans ${isDarkMode ? 'bg-slate-900 text-slate-200' : 'bg-[#FFFBF0] text-gray-800'}`}>
         <Header title="Library" isDarkMode={isDarkMode} toggleTheme={() => setIsDarkMode(!isDarkMode)} showBack={false} />
-        <LibraryView onSelectBook={handleBookSelect} isDarkMode={isDarkMode} />
+        <LibraryView onSelectBook={navigateToBook} isDarkMode={isDarkMode} />
         <Footer isDarkMode={isDarkMode} />
       </div>
     );
@@ -461,7 +473,10 @@ export default function App() {
         isOpen={showIndex} 
         onClose={() => setShowIndex(false)} 
         verses={currentBook.verses} 
-        onSelect={handleIndexSelect} 
+        onSelect={(idx) => {
+            navigateToVerseIndex(idx);
+            setShowIndex(false);
+        }}
         isDarkMode={isDarkMode} 
       />
 
